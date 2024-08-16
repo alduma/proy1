@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>PRODUCTO</title>
+
+	<!-- font Awesome CDN link -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" />
+
+	<!-- External CSS -->
+	<link rel="stylesheet" href="style.css">
+	<link rel="stylesheet" href="about.css">
+	<link rel="stylesheet" href="course-inner.css">
+
+	<!-- JQuery CDN link -->
+	<script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+</head>
+<body>
+	<!-- Navigation start -->
+	<nav>
+		<img src="img/LOGO.png" class="logo" alt="">
+
+		<div class="navigation">
+			<ul>
+				<i id="menu-close" class="fas fa-times"></i>
+				<li><a href="index.html">Home</a></li>
+				<li><a href="about.html">Nosotros</a></li>
+				<li><a href="courses.html" class="active">Catalogo</a></li>
+				<li><a href="contact.html">Contacto</a></li>
+			</ul>
+
+			<img src="img/menu.png" id="menu-btn" alt="">
+		</div>
+	</nav>
+	<!-- Navigation ends -->
+
+
+	<!-- Hero section starts from here -->
+	<section id="about-home">
+		<h2>
+			Producto 1
+		</h2>
+	</section>
+	<!-- Hero section ends from here -->
+
+
+	<!-- Course body section starts -->
+	<section id="course-inner">
+		<div class="overview">
+			<img class="course-img" src="img/a1.jpg" alt="">
+
+			<div class="course-head">
+				<div class="c-name">
+					<h2>Producto 1</h2>
+
+					<div class="star">
+						<i class="fa-solid fa-star"></i>
+						<i class="fa-solid fa-star"></i>
+						<i class="fa-solid fa-star"></i>
+						<i class="fa-solid fa-star"></i>
+						<i class="fa-solid fa-star"></i>
+					</div>
+
+					<p>
+						Descripcion del producto a vender.
+					</p>
+				</div>
+				<span>S/. 50.00</span>
+			</div>
+
+			
+
+			<hr>
+
+			<h3>Course Overview</h3>
+
+			<p>
+				Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit aut ipsa quam impedit accusamus labore eligendi neque cupiditate repellat asperiores!
+			</p>
+			
+			<hr>
+
+
+		</div>
+
+		<div class="enroll">
+			<h3>Especificaciones :</h3>
+
+			<p>
+				<i class="fa-solid fa-video"></i> material
+			</p>
+			<p>
+				<i class="fa-solid fa-newspaper"></i> cantidad
+			</p>
+			<p>
+				<i class="fa-solid fa-download"></i> tamaño
+			</p>
+			<p>
+				<i class="fa-solid fa-key"></i> precio
+			</p>
+
+			<div class="enroll-btn">
+				<a href="#" class="blue">Comprar</a>
+			</div>
+		</div>
+	</section>
+	<!-- Course body section starts -->
+
+
+	<!-- Footer section starts from here -->
+	<footer>
+		
+
+		<div class="footer-col">
+			
+			
+			<div class="subscribe">
+				<div class="centrar1"><p>Estate al pendiente de nuestras novedades </p> </div>
+				
+				<input type="email" placeholder="Ingresa tu correo">
+				<a href="#" class="yellow">SUBSCRIBETE</a>
+			</div>
+		</div>
+
+		
+		
+		<div class="footer-col">
+			
+			<div class="copyright">
+				
+
+				<div class="pro-links">
+					<i class="fab fa-facebook"></i>
+					<i class="fab fa-instagram"></i>
+					<i class="fab fa-linkedin-in"></i>
+				</div>
+			</div>
+		</div>
+		
+	
+
+</footer>
+
+	<script>
+		// Show menu links on burger click
+		$('#menu-btn').click(function(){
+			$('nav .navigation ul').addClass('active')
+		});
+
+		// Hide navbar on click function
+		$('#menu-close').click(function(){
+			$('nav .navigation ul').removeClass('active')
+		});
+	</script>
+</body>
+</html>

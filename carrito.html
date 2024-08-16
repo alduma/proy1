@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carrito de Compras</title>
+</head>
+<body>
+    <h1>Carrito de Compras</h1>
+    <div id="cart-items"></div>
+
+    <script>
+        function loadCartItems() {
+            const cart = JSON.parse(localStorage.getItem('cart')) || [];
+            const cartItemsContainer = document.getElementById('cart-items');
+            
+            if (cart.length === 0) {
+                cartItemsContainer.innerHTML = '<p>El carrito está vacío.</p>';
+            } else {
+                cart.forEach(item => {
+                    const itemElement = document.createElement('div');
+                    itemElement.innerHTML = `<p>${item.name} - ${item.price}</p>`;
+                    cartItemsContainer.appendChild(itemElement);
+                });
+            }
+        }
+        
+        window.onload = loadCartItems;
+    </script>
+</body>
+</html>

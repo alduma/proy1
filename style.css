@@ -1,0 +1,954 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,700;1,800;1,900&display=swap');
+
+*
+{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body
+{
+	font-family: 'Poppins', sans-serif;
+}
+
+h1
+{
+	font-size: 2.5rem;
+	font-weight: 700;
+	color: rgb(35, 35, 85);
+}
+
+span
+{
+	font-size: .9rem;
+}
+
+h6
+{
+	font-size: 1.1rem;
+	color: rgb(24, 24, 49);
+}
+
+
+/*------------- Navigation style start ------------*/
+nav
+{
+	position: fixed;
+	width: 100%;
+	background-color: #fff;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 1vw 8vw;
+	box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.15);
+	z-index: 1;
+}
+
+
+nav .logo
+{
+	width: 180px;
+	cursor: pointer;
+}
+
+
+nav .logo2
+{
+	width: 60px;
+	cursor: pointer;
+	margin-left: -640px;
+
+}
+
+.aea{
+	margin-top: 9px;
+	margin-left: 580px;
+}
+
+nav .navigation
+{
+	display: flex;
+}
+
+#menu-btn
+{
+	width: 30px;
+	height: 30px;
+	display: none;
+}
+
+#menu-close
+{
+	display: none;
+}
+
+nav .navigation ul
+{
+	display: flex;
+	justify-content: flex-end;
+	align-items: center;
+}
+
+nav .navigation ul li
+{
+	list-style: none;
+	margin-left: 30px;
+}
+
+nav .navigation ul li a
+{
+	text-decoration: none;
+	color: rgb(21, 21, 100);
+	font-size: 16px;
+	font-weight: 500;
+	transition: 0.3s ease;
+}
+
+nav .navigation ul li a.active,
+nav .navigation ul li a:hover
+{
+	color: #FDC93B;
+
+}
+/*------------- Navigation style end ------------*/
+
+
+
+/*------------- Hero section styling start --------------*/
+#home
+{
+	background-image: linear-gradient(rgba(9, 5, 54, 0.3), rgba(5,4,46,0.7)), url("img/w1.jpg");
+	width: 100%;
+	height: 80vh;
+	background-size: cover;
+	background-position: center center;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+	padding-top: 40px;
+}
+
+#home h2
+{
+	color: #fff;
+	font-size: 2.2rem;
+	letter-spacing: 1px;
+}
+
+#home p
+{
+	width: 50%;
+	color: #fff;
+	font-size: 0.9rem;
+	line-height: 25px;
+}
+
+#home .btn
+{
+	margin-top: 30px;
+}
+
+#home a
+{
+	text-decoration: none;
+	font-size: 0.9rem;
+	padding: 13px 35px;
+	background-color: #fff;
+	font-weight: 600;
+	border-radius: 5px;
+}
+
+#home a.blue
+{
+	color: #fff;
+	background: rgb(21, 21, 100);
+	transition: 0.3s ease;
+}
+
+#home a.blue:hover
+{
+	color: rgb(21, 21, 100);
+	background: #fff;
+}
+
+#home a.yellow
+{
+	color: #fff;
+	background: #fdc938;
+	transition: 0.3s ease;
+}
+
+#home a.yellow:hover
+{
+	color: rgb(21, 21, 100);
+	background: #fff;
+}
+/*------------- Hero section styling end --------------*/
+
+
+/*------------- Features section styling start -------------*/
+#features
+{
+	background-image: linear-gradient(rgba(9, 5, 54, 0.3), rgba(5,4,46,0.7)), url("img/w4.jpg");
+
+	padding: 5vw 8vw 5vw 8vw;
+	text-align: center;
+}
+
+#features .fea-base
+{
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+	grid-gap: 1rem;
+	margin-top: 50px;
+}
+
+#features .fea-box
+{
+	background: #edf1f2;
+	text-align: start;
+	padding: 1.2rem;
+	border-radius: 6px;
+}
+
+#features .fea-box i
+{
+	font-size: 2.3rem;
+	color: rgb(44, 44, 80);
+}
+
+#features .fea-box h3
+{
+	font-size: 1.2rem;
+	font-weight: 600;
+	color: rgb(46, 46, 59);
+	padding: 13px 0 7px 0;
+}
+
+#features .fea-box p
+{
+	font-size: 1rem;
+	font-weight: 400;
+	color: rgb(70, 70, 87);
+}
+/*------------- Features section styling end -------------*/
+
+
+/*------------- Courses section styling start ------------*/
+#course
+{
+	background-image: linear-gradient(rgba(9, 5, 54, 0.3), rgba(5,4,46,0.7)), url("img/w1.jpg");
+
+	padding: 4vw 8vw 6vw 8vw;
+	text-align: center;
+}
+
+#course .course-box
+{
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+	grid-gap: 1rem;
+	margin-top: 50px;
+}
+
+#course .courses
+{
+	text-align: start;
+	background: #edf1f2;
+	height: 100%;
+	position: relative;
+}
+
+#course .courses img
+{
+	width: 100%;
+	height: 60%;
+	background-size: cover;
+	background-position: center;
+}
+
+#course .courses .details
+{
+	padding: 15px 15px 0 15px;
+}
+
+#course .courses .details i
+{
+	color: #fdc93b;
+	font-size: .9rem;
+}
+
+#course .courses .cost
+{
+	background-color: rgb(74, 74, 136);
+	color: #fff;
+	line-height: 70px;
+	width: 70px;
+	height: 70px;
+	text-align: center;
+	border-radius: 50%;
+	position: absolute;
+	right: 15px;
+	bottom: 100px;
+}
+/*------------- Courses section styling end ------------*/
+
+
+/*------------- Registration section styling start ----------*/
+#registration
+{
+	padding: 6vw 8vw 6vw 8vw;
+	background-image: linear-gradient(rgba(99,112,168,0.5), rgba(81,91,233,0.5)),url("img/w2.jpeg");
+	width: 100%;
+	height: 100%;
+	background-size: cover;
+	background-position: center;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+#registration .reminder, #registration .reminder h1
+{
+	color: #fff;
+}
+
+#registration .reminder .time
+{
+	display: flex;
+	margin-top: 40px;
+}
+
+#registration .reminder .time .date
+{
+	text-align: center;
+	padding: 13px 33px;
+	background: rgba(255, 255, 255, 0.25);
+	backdrop-filter: blur(4px);
+	box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+	border-radius: 10px;
+	margin: 0 5px 10px 5px;
+	border: 1px solid rgba(255, 255, 255, 0.18);
+	font-size: 1.1rem;
+	font-weight: 600;
+}
+
+#registration .form
+{
+	background: #ffffff59;
+	border-radius: 8px;
+	display: flex;
+	flex-direction: column;
+	padding: 25px;
+	box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+}
+
+#registration .form input
+{
+	margin: 12px 0;
+	padding: 10px 45px;
+	border: 1px solid rgb(84, 40, 241);
+	outline: none;
+}
+
+#registration .form input::placeholder
+{
+	color: #413c3c;
+	font-weight: 500;
+	font-size: 0.9rem;
+}
+
+#registration .form .btn
+{
+	
+	margin-top: 20px;
+	margin: 0 auto; /* Centra horizontalmente */
+
+}
+
+#registration .form a.yellow
+{
+	text-decoration: none;
+	font-size: 0.9rem;
+	padding: 13px 35px;
+	background-color: #fff;
+	font-weight: 600;
+	border-radius: 5px;
+	color: #fff;
+	background: #fdc938;
+	transition: 0.3s ease;
+	
+}
+
+#registration .form a.yellow:hover
+{
+	color: rgb(21, 21, 100);
+	background: #fff;
+	
+}
+/*------------- Registration section styling end ----------*/
+
+
+
+/*------------- Experts section styling starts ----------*/
+#experts
+{
+	background-image: linear-gradient(rgba(9, 5, 54, 0.3), rgba(5,4,46,0.7)), url("img/w1.jpg");
+
+	padding: 4vw 8vw 4vw 8vw;
+	text-align: center;
+}
+
+#experts .expert-box
+{
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+	grid-gap: 1rem;
+	margin-top: 50px;
+}
+
+#experts .expert-box .profile
+{
+	background: #fafaf1;
+	padding: 30px 10px;
+	box-shadow: rgba(17, 17, 26, 0.05) 0px 1px 0px, rgba(17, 17, 26, 0.1) 0px 0px 8px;
+}
+
+#experts .expert-box .profile:hover
+{
+	box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 50px;
+}
+
+.pro-links
+{
+	margin-top: 10px;
+}
+
+.pro-links i
+{
+	padding: 10px 13px;
+	border: 1px solid rgb(21, 21, 100);
+	cursor: pointer;
+	transition: 0.3s ease;
+}
+
+.pro-links i:hover
+{
+	background: rgb(21, 21, 100);
+	color: #fff;
+}
+/*------------- Experts section styling ends ----------*/
+
+
+
+/*------------- Footer section styling starts ------------*/
+footer
+{
+	padding: 1vw;
+	background-color: #101c32;
+	display: flex;
+	justify-content: space-between;
+	align-items: flex-start;
+	flex-wrap: wrap;
+}
+
+footer .footer-col
+{
+	padding-bottom: 0px;
+	
+}
+
+footer h3
+{
+	color: rgb(241, 240, 245);
+	font-weight: 600;
+	padding-bottom: 20px;
+}
+
+footer li
+{
+	list-style: none;
+	color: #7b838a;
+	padding: 10px 0;
+	font-size: 15px;
+	cursor: pointer;
+	transition: 0.3s ease;
+}
+
+footer li:hover
+{
+	color: rgb(241, 240, 245);
+}
+
+footer p
+{
+	color: #7b838a;
+
+}
+
+footer .subscribe
+{
+	margin-top: 15px;
+	margin-left: 180px;
+	
+}
+
+footer input
+{
+	width: 220px;
+	height: 42px;
+	padding: 15px 12px;
+	background: #334F6C;
+	border: none;
+	outline: none;
+	color: #fff;
+}
+
+footer .subscribe a
+{
+	text-decoration: none;
+	font-size: 0.4rem;
+	padding: 12px 15px;
+	background-color: #fff;
+	font-weight: 600;
+}
+
+footer .subscribe a.yellow
+{
+
+	color: #fff;
+	font-size: 0.8rem;
+	background: #fdc93b;
+	transition: 0.3s ease;
+}
+
+footer .subscribe a.yellow:hover
+{
+	color: rgb(21, 21, 100);
+	background: #fff;
+	
+
+}
+
+footer .copyright
+{
+	margin-top: 20px;
+	width: 100%;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	flex-wrap: wrap;
+	
+}
+
+footer .copyright p, footer .copyright p > a
+{
+	color: #fff;
+	text-decoration: none;
+}
+
+footer .copyright .pro-links
+{
+	margin-top: 0px;
+	margin-right: 350px; 
+}
+
+footer .copyright .pro-links i
+{
+	font-size: 30px; /* Ajusta el tamaño según tus necesidades */
+
+	margin-top: 0px;
+	background-color: #5f7185;
+	color: #fff;
+}
+
+footer .copyright .pro-links i:hover
+{
+	background: #fdc93b;
+	color: #2c2c2c;
+}
+/*------------- Footer section styling ends ------------*/
+
+
+
+/*---------------------------------------------------------*/
+/*-------------------- Ipad screen styling ----------------*/
+/*---------------------------------------------------------*/
+@media screen and (max-width: 789px)
+{
+	nav
+	{
+		padding: 15px 20px;
+	}
+
+	nav img
+	{
+		width: 130px;
+	}
+
+	#menu-btn
+	{
+		display: initial;
+	}
+
+	#menu-close
+	{
+		display: initial;
+		font-size: 1.6rem;
+		color: #fff;
+		padding: 30px 0 20px 20px;
+	}
+
+	nav .navigation ul
+	{
+		position: absolute;
+		top: 0;
+		right: -220px;
+		display: flex;
+		flex-direction: column;
+		justify-content: flex-start;
+		align-items: flex-start;
+		width: 220px;
+		height: 100vh;
+		background: rgba(17, 20, 104, 0.45);
+		backdrop-filter: blur(4.5px);
+		border: 1px solid rgba(255, 255, 255, 0.18);
+		transition: 0.3s ease-in;
+	}
+
+	nav .navigation ul.active
+	{
+		right: 0;
+	}
+
+	nav .navigation ul li
+	{
+		padding: 20px 0 20px 40px;
+		margin-left: 0;
+	}
+
+	nav .navigation ul li a
+	{
+		color: #fff;
+	}
+
+	#home
+	{
+		padding: 0px;
+	}
+
+	#home p
+	{
+		width: 90%;
+	}
+
+	#features
+	{
+		padding: 8vw 4vw 0 4vw;
+	}
+
+	#course
+	{
+		padding: 8vw 4vw 8vw 4vw;
+	}
+
+	#registration
+	{
+		padding: 6vw 4vw 6vw 4vw;
+		gap: 2.2rem;
+	}
+
+	#registration .reminder .time
+	{
+		display: flex;
+		justify-content: space-between;
+		flex-wrap: wrap;
+		margin-top: 40px;
+	}
+
+	#experts
+	{
+		padding: 8vw 4vw 6vw 4vw;
+	}
+
+	footer .copyright .pro-links
+	{
+		margin-top: 20px;
+	}
+}
+
+
+@media screen and (max-width: 475px)
+{
+	#registration
+	{
+		flex-direction: column;
+	}
+
+	.reminder p, .reminder h1
+	{
+		text-align: center;
+	}
+
+	.reminder h1
+	{
+		font-size: 1.8rem;
+	}
+
+	#registration .reminder .time
+	{
+		justify-content: space-evenly;
+		margin-top: 20px;
+	}
+}
+
+
+
+.centrar1 {
+    text-align: center; /* Centra el texto dentro del contenedor */
+	margin-bottom: 10px;
+}
+
+
+.button-container {
+    display: flex;
+    justify-content: center; /* Centra el botón horizontalmente */
+    margin-top: 10px;        /* Espacio superior para separarlo del precio */
+}
+
+.buy-btn {
+    background-color: #007bff; /* Color azul */
+    color: white;              /* Texto blanco */
+    padding: 10px 20px;        /* Espaciado interno */
+    border: none;              /* Sin borde */
+    border-radius: 5px;        /* Bordes redondeados */
+    cursor: pointer;           /* Cambiar cursor a mano */
+    font-size: 16px;           /* Tamaño del texto */
+	
+    margin-top: 10px;          /* Espacio superior */
+}
+
+.buy-btn:hover {
+    background-color: #0056b3; /* Color azul más oscuro al pasar el cursor */
+	
+}
+
+
+
+
+
+
+
+/*---------------------------------------------------------*/
+/*-------------------- Estilos carrito ----------------*/
+.cart {
+    width: 40px;
+    height: 35px;
+    position: relative;
+    top: 5px; /* Ajusta la posición vertical si es necesario */
+    right: 320px; /* Ajusta la posición horizontal si es necesario */
+}
+
+.count-product {
+    position: absolute;
+    top: 10px; /* Ajusta la posición vertical del número si es necesario */
+    right: 310px; /* Ajusta la posición horizontal del número si es necesario */
+    font-size: 14px;
+    color: #fff;
+    background-color: #ff0000;  /* Color de fondo */
+    border-radius: 50%;  /* Redondea el borde */
+    padding: 2px 6px;  /* Espacio alrededor del número */
+    min-width: 20px;  /* Asegura que tenga un tamaño mínimo */
+    text-align: center;
+    transform: translate(50%, -50%); /* Ajusta la posición del número sobre el ícono */
+}
+
+@media (max-width: 768px) {
+    .cart {
+        width: 8vw; /* Ajusta el tamaño en pantallas más pequeñas */
+        right: 2vw; /* Ajusta la posición desde la derecha */
+    }
+}
+
+@media (max-width: 480px) {
+    .cart {
+        width: 12vw; /* Ajusta el tamaño en pantallas aún más pequeñas */
+        right: 1vw; /* Ajusta la posición desde la derecha */
+		
+    }
+}
+
+
+@media (max-width: 768px) {
+    .count-product {
+        width: 8vw; /* Ajusta el tamaño en pantallas más pequeñas */
+        right: 2vw; /* Ajusta la posición desde la derecha */
+    }
+}
+
+@media (max-width: 480px) {
+    .count-product {
+        width: 12vw; /* Ajusta el tamaño en pantallas aún más pequeñas */
+        right: 1vw; /* Ajusta la posición desde la derecha */
+		
+    }
+}
+
+.cart-container {
+    display: flex;
+    align-items: center;
+	
+    position: relative;
+}
+
+.cart {
+    width: 10vw; /* Ajusta el tamaño según sea necesario */
+    height: auto; /* Mantiene la proporción de la imagen */
+    max-width: 50px;
+    max-height: 45px;
+}
+
+
+.cart-products{
+    position: absolute!important;
+    top: 80px;
+    right:900px;
+    background-color: #fff;
+    padding: 0 18px;
+    box-shadow: 0 3px 10px rgb(0 0 0 / 20%);
+    display: none;
+
+    min-width: 290px;
+}
+
+.cart:hover{
+    margin-bottom: 16px;
+    transition-duration: .5s;
+}
+/*end header*/
+.products{
+    display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+	grid-row-gap: 2.5rem; /* Espacio entre las filas */
+    grid-column-gap: 1rem; /* Espacio entre las columnas */
+	margin-top: 50px;
+}
+
+.carts{
+    text-align: center;
+	background: #edf1f2;
+	height: 106%;
+	position: relative;
+	
+}
+.carts img{
+    width: 100%;
+	height: 60%;
+	background-size: cover;
+	background-position: center;
+}
+.carts p{
+    font-family: system-ui;
+    font-weight: 500;
+    padding: 0 20px;
+    margin-bottom: 24px;
+}
+.carts div p{
+    position: absolute;
+    top: 0;
+    right: 0px;
+    background-color: rgb(0, 235, 129);
+    color: #fff;
+    padding: 2px 7px 4px 21px;
+    clip-path: polygon(25% 0%, 100% 0%, 100% 100%, 25% 100%, 0% 50%);
+}
+.carts div{
+    position: relative;
+}
+.carts a{
+    font-family: system-ui;
+    text-decoration: none;
+    background: rgb(0, 255, 76);
+    padding: 9px 23px;
+    color: #fff;
+    font-size: 17px;
+    text-transform: uppercase;
+    font-weight: 700;
+	
+}
+
+.carts a:hover{
+    background: #fff;
+    color: red;
+    border: solid 2px red;
+    transition-duration: .3s;
+}
+
+/*float cart*/
+.cart-products .item img{
+    width: 115px;
+}
+
+.cart-products .item{
+    display: flex;
+    align-items: center;
+    border-bottom: solid 2px red;
+}
+.cart-products .item .item-content{
+    margin: 0 19px;
+    width: 201px;
+}
+.cart-products .item .item-content h5{
+    margin: 0;
+    font-size: 15px;
+    font-weight: 400;
+    font-family: system-ui;
+}
+.cart-products .item .item-content h6{
+    margin: 0;
+    font-size: 13px;
+    font-weight: 400;
+    font-family: system-ui;
+}
+.cart-products .item span{
+    background-color: red;
+    padding: 0px 5px;
+    border-radius: 50%;
+    color: #fff;
+    font-family: system-ui;
+    cursor: pointer;
+}
+.cart-products h3{
+    margin-bottom: 0;
+}
+.cart-products .item .item-content h5.cart-price{
+    font-weight: 700;
+}
+
+/*stye to btn close*/
+p.close-btn{
+    top: -4px;
+    right: 6px;
+    cursor: pointer;
+    color: #472d2d;
+}
+p.author {
+    display: flex;
+    justify-content: center;
+    FONT-VARIANT: JIS04;
+    margin-top: 3%;
+    gap: 7px;
+}
+p.author a {
+    text-decoration: none;
+    font-weight: 700;
+    color: #000;
+}
+
+
+
+
+

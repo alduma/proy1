@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>NOSOTROS</title>
+
+	<!-- font Awesome CDN link -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" />
+
+	<!-- External CSS -->
+	<link rel="stylesheet" href="style.css">
+	<link rel="stylesheet" href="about.css">
+
+	<!-- JQuery CDN link -->
+	<script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+</head>
+<body>
+	<!-- Navigation start -->
+	<nav>
+		<img src="img/LOGO.png" class="logo" alt="">
+
+		<div class="navigation">
+			<ul>
+				<i id="menu-close" class="fas fa-times"></i>
+				<li><a href="index.html">Home</a></li>
+				<li><a href="about.html" class="active">Nosotros</a></li>
+				<li><a href="courses.html">Catalogo</a></li>
+				<li><a href="contact.html">Contacto</a></li>
+			</ul>
+
+			<img src="img/menu.png" id="menu-btn" alt="">
+		</div>
+	</nav>
+	<!-- Navigation ends -->
+
+
+	<!-- Hero section starts from here -->
+	<section id="about-home">
+		<h2>
+			Conócenos
+		</h2>
+	</section>
+	<!-- Hero section ends from here -->
+
+
+	<!-- About section starts from here -->
+	<section id="about-container">
+		<div class="about-img">
+			<img src="img/s1.jpg" alt="">
+		</div>
+		<div class="about-text">
+			<h2>
+				¡Bienvenidos a [Nombre de la tienda]!
+			</h2>
+			<p>
+				Nos especializamos en hacer que cada Navidad sea mágica y especial con nuestros productos únicos y hechos a mano. Desde encantadores muñecos hasta hermosas decoraciones, cada pieza está creada con amor y dedicación para llenar tu hogar de alegría navideña.
+Descubre nuestra selección de artesanías navideñas, perfectas para regalar o decorar tu hogar, y lleva la calidez y el espíritu de la Navidad a cada rincón. ¡Gracias por apoyar el trabajo artesanal y ser parte de nuestra historia navideña!
+			</p>
+
+			
+		</div>
+	</section>
+	<!-- About section ends from here -->
+
+
+	<!-- Features section starts from here -->
+	<section id="features">
+		<h1>Descubre la Magia de Nuestra Tienda</h1>
+
+		<div class="fea-base">
+			<div class="fea-box">
+				<i class="fas fa-graduation-cap"></i>
+				<h3>Artesanía Única</h3>
+				<p>
+					Nuestros productos están hechos a mano con atención al detalle y dedicación. Cada muñeco, adorno, y decoración que ofrecemos es una obra única, creada para añadir un toque especial a tu hogar o para ser el regalo perfecto
+				</p>
+			</div>
+
+			<div class="fea-box">
+				<i class="fa-solid fa-book-bookmark"></i>
+				<h3>Decoración Navideña Exclusiva</h3>
+				<p>
+					Explora nuestra selección exclusiva de adornos navideños. Desde guirnaldas hasta adornos para el árbol, nuestras creaciones están diseñadas para hacer de tu Navidad una celebración inolvidable, llena de calidez y magia.
+				</p>
+			</div>
+
+			<div class="fea-box">
+				<i class="fas fa-award"></i>
+				<h3>Hecho con Amor</h3>
+				<p>
+					Nuestros productos no son simplemente artículos, sino manifestaciones de amor y arte. Cada pieza es el resultado de horas de trabajo dedicado, pensado para aportar un toque personal y encantador a tu celebración navideña.				</p>
+			</div>
+		</div>
+	</section>
+	<!-- Features section ends from here -->
+
+
+	<!-- Trust section starts from here -->
+	<section id="trust">
+		<h1>Calidad Garantizada</h1>
+
+		
+		<p>Nos enorgullecemos de la calidad de nuestros productos. Utilizamos los mejores materiales y técnicas artesanales, asegurando que cada artículo no solo sea hermoso, sino también duradero y de alta calidad.</p>
+		<div class="trust-img">
+			<img src="img/z1.png" alt="">
+			<img src="img/z2.png" alt="">
+			<img src="img/z3.png" alt="">
+			<img src="img/z5.png" alt="">
+		</div>
+	</section>
+	<!-- Trust section ends from here -->
+
+
+	<!-- Footer section starts from here -->
+	<footer>
+		
+
+		<div class="footer-col">
+			
+			
+			<div class="subscribe">
+				<div class="centrar1"><p>Estate al pendiente de nuestras novedades </p> </div>
+				
+				<input type="email" placeholder="Ingresa tu correo">
+				<a href="#" class="yellow">SUBSCRIBETE</a>
+			</div>
+		</div>
+
+		
+		
+		<div class="footer-col">
+			
+			<div class="copyright">
+				
+
+				<div class="pro-links">
+					<i class="fab fa-facebook"></i>
+					<i class="fab fa-instagram"></i>
+					<i class="fab fa-linkedin-in"></i>
+				</div>
+			</div>
+		</div>
+		
+	
+
+</footer>
+	<!-- Footer section ends from here -->
+
+	<script>
+		// Show menu links on burger click
+		$('#menu-btn').click(function(){
+			$('nav .navigation ul').addClass('active')
+		});
+
+		// Hide navbar on click function
+		$('#menu-close').click(function(){
+			$('nav .navigation ul').removeClass('active')
+		});
+	</script>
+</body>
+</html>
