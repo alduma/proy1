@@ -960,26 +960,17 @@ p.author a {
     margin-top: 10px; /* Ajusta el espacio entre la línea y el contenido anterior */
 }
 
-.footer-title::before {
-    content: "";
-    position: absolute;
-    left: 0;
-    top: 0;
-    width: 100%; /* Extiende la línea a lo largo del contenedor */
-    height: 2px; /* Grosor de la línea */
-    background-color: white; /* Color de la línea */
+
+
+
+footer .footer-col p {
+    display: flex;
+    align-items: center; /* Alinea verticalmente el ícono y el texto */
+    justify-content: center; /* Centra horizontalmente el contenido dentro del p */
+    margin: 0; /* Elimina márgenes adicionales si es necesario */
 }
 
-
-.footer-title::after {
-    content: "";
-    position: absolute;
-    left: 0;
-    bottom: -10px; /* Coloca la línea justo debajo del contenido */
-    width: 100%; /* Extiende la línea a lo largo del contenedor */
-    height: 2px; /* Grosor de la línea */
-    background-color: white; /* Color de la línea */
+footer .footer-col i {
+    margin-left: 8px; /* Espacio entre el texto y el ícono */
+    color: white; /* Asegúrate de que los íconos sean visibles */
 }
-
-
-
