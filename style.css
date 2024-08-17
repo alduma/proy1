@@ -453,7 +453,7 @@ footer
 	padding: 1vw;
 	background-color: #101c32;
 	display: flex;
-	justify-content: space-between;
+	justify-content: space-around;
 	align-items: flex-start;
 	flex-wrap: wrap;
 }
