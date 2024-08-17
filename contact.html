@@ -93,7 +93,7 @@
 					<input type="text" name="subject" placeholder="Asunto" required>
 				</div>
 				<div class="form-col">
-					<textarea name="message" cols="30" rows="8" placeholder="¿Cómo podemos ayudarte?" required></textarea>
+					<textarea name="message" cols="25" rows="5" placeholder="¿Cómo podemos ayudarte?" required></textarea>
 				</div>
 				<div class="form-col">
 					<button type="submit">Enviar mensaje</button>
@@ -146,6 +146,26 @@
 
 </footer>
 	<!-- Footer section ends from here -->
+
+
+	<script>
+		document.querySelector('form').addEventListener('submit', function(event) {
+			event.preventDefault(); // Evita el envío del formulario
+			fetch(event.target.action, {
+				method: event.target.method,
+				body: new FormData(event.target),
+			}).then(response => {
+				if (response.ok) {
+					document.getElementById('form-messages').innerText = 'Gracias! Tu mensaje ha sido enviado.';
+					event.target.reset(); // Limpia el formulario
+				} else {
+					document.getElementById('form-messages').innerText = 'Hubo un error al enviar el mensaje. Por favor, inténtalo de nuevo.';
+				}
+			}).catch(() => {
+				document.getElementById('form-messages').innerText = 'Hubo un error al enviar el mensaje. Por favor, inténtalo de nuevo.';
+			});
+		});
+		</script>
 
 	<script>
 		// Show menu links on burger click

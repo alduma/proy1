@@ -13,7 +13,6 @@
 
 	<!-- External CSS -->
 	<link rel="stylesheet" href="style.css">
-	<link rel="stylesheet" href="contact.css">
 
 	<!-- JQuery CDN link -->
 	<script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
@@ -204,29 +203,30 @@
 
 		</div>
 
-		<div class="form">
-			<div class="centrar"><h4>Formulario</h4></div>
-			
+		<div class="form1">
 			
 			<form action="https://formsubmit.co/alvaro.durand@ucsp.edu.pe" method="POST">
-				<div class="form-row">
+				<div class="form-col">
 					<input type="text" name="name" placeholder="Ingresa tu nombre" required>
+				</div>
+				<div class="form-col">
 					<input type="email" name="email" placeholder="Ingresa tu correo" required>
 				</div>
 				<div class="form-col">
-					<input type="text" name="subject" placeholder="Asunto" required>
+					<input type="text" name="subject"  placeholder="Telefono" required>
 				</div>
 				<div class="form-col">
-					<textarea name="message" cols="30" rows="8" placeholder="¿Cómo podemos ayudarte?" required></textarea>
+					<textarea name="message" cols="70" rows="1" placeholder="Informacion Adicional" required></textarea>
 				</div>
-				<div class="form-col">
-					<button type="submit">Enviar mensaje</button>
+				<div class="centrar1">
+					<button type="submit">Enviar</button>
 				</div>
-
 				<input type="hidden" name="_next" value="http://127.0.0.1:5500/">
 				<input type="hidden" name="_captcha" value="false">
 			</form>
 		</div>
+		
+		
 	</section>
 	<!-- Registration section ends from here -->
 
@@ -338,6 +338,27 @@
 			$('nav .navigation ul').removeClass('active')
 		});
 	</script>
+
+<script>
+	document.querySelector('form').addEventListener('submit', function(event) {
+		event.preventDefault(); // Evita el envío del formulario
+		fetch(event.target.action, {
+			method: event.target.method,
+			body: new FormData(event.target),
+		}).then(response => {
+			if (response.ok) {
+				document.getElementById('form-messages').innerText = 'Gracias! Tu mensaje ha sido enviado.';
+				event.target.reset(); // Limpia el formulario
+			} else {
+				document.getElementById('form-messages').innerText = 'Hubo un error al enviar el mensaje. Por favor, inténtalo de nuevo.';
+			}
+		}).catch(() => {
+			document.getElementById('form-messages').innerText = 'Hubo un error al enviar el mensaje. Por favor, inténtalo de nuevo.';
+		});
+	});
+	</script>
+
+
     <script src="script.js"></script>
 
 </body>

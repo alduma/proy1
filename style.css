@@ -974,3 +974,79 @@ footer .footer-col i {
     margin-left: 8px; /* Espacio entre el texto y el ícono */
     color: white; /* Asegúrate de que los íconos sean visibles */
 }
+
+/* Estilo general del formulario */
+.form1 {
+    max-width: 700px; /* Ancho máximo del formulario */
+    margin: 0 auto; /* Centra el formulario en la página */
+    padding: 20px; /* Espacio interno del formulario */
+    background-color: #f9f9f9; /* Color de fondo claro */
+    border-radius: 8px; /* Bordes redondeados */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra del formulario */
+    box-sizing: border-box; /* Incluye padding en el ancho total */
+}
+
+/* Estilo del título del formulario */
+.centrar1 h4 {
+    text-align: center; /* Centra el texto del título */
+    margin-bottom: 20px; /* Espacio debajo del título */
+    color: #333; /* Color del texto del título */
+    font-size: 24px; /* Tamaño de la fuente del título */
+}
+
+/* Estilo de cada columna en el formulario */
+.form-col {
+    margin-bottom: 15px; /* Espacio debajo de cada campo */
+}
+
+/* Estilo de los campos del formulario */
+input[type="text"],
+input[type="email"],
+textarea {
+    width: 100%; /* Ocupa todo el ancho disponible del contenedor */
+    padding: 12px; /* Espacio interno en los campos */
+    border: 1px solid #ddd; /* Borde del campo */
+    border-radius: 5px; /* Bordes redondeados en los campos */
+    font-size: 16px; /* Tamaño de la fuente */
+    box-sizing: border-box; /* Incluye padding y border en el width */
+    transition: border-color 0.3s, box-shadow 0.3s; /* Transiciones suaves para los efectos */
+}
+
+/* Estilo de los campos en el enfoque */
+input[type="text"]:focus,
+input[type="email"]:focus,
+textarea:focus {
+    border-color: #007bff; /* Color del borde en el enfoque */
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5); /* Sombra del campo en el enfoque */
+    outline: none; /* Elimina el borde de enfoque predeterminado */
+}
+
+/* Estilo de los botones del formulario */
+button {
+    background-color: #007bff; /* Color de fondo del botón */
+    color: #ffffff; /* Color del texto del botón */
+    border: none; /* Sin borde */
+    border-radius: 5px; /* Bordes redondeados */
+    padding: 12px 20px; /* Espacio interno del botón */
+    font-size: 16px; /* Tamaño de la fuente */
+    font-weight: bold; /* Fuente en negrita */
+    cursor: pointer; /* Cambia el cursor a una mano al pasar sobre el botón */
+    transition: background-color 0.3s, transform 0.3s; /* Transiciones suaves */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Sombra del botón */
+    text-align: center; /* Centra el texto del botón */
+}
+
+button:hover {
+    background-color: #0056b3; /* Color de fondo en el hover */
+    transform: translateY(-2px); /* Efecto de elevación */
+}
+
+button:active {
+    background-color: #004494; /* Color de fondo cuando se hace clic */
+    transform: translateY(0); /* Restablece la posición al hacer clic */
+}
+
+button:focus {
+    outline: none; /* Elimina el borde de enfoque predeterminado */
+}
+
