@@ -20,7 +20,20 @@
 	<!-- Navigation start -->
 	<nav>
 		<img src="img/LOGO.png" class="logo" alt="">
-
+		
+		<div class="cart-container">
+			<img onclick="showCart(this)" class="cart" src="./img/cart.png" alt="">
+			<p class="count-product">0</p>			
+		</div>
+		
+		<div class="cart-products" id="products-id">
+			<p class="close-btn" onclick="closeBtn()">x</p>
+			<h3>Mi carrito</h3>
+			<div class="card-items">
+			</div>
+			<h4>Total: S/. <strong class="price-total">0</strong></h4>
+		</div>
+		
 		<div class="navigation">
 			<ul>
 				<i id="menu-close" class="fas fa-times"></i>
@@ -110,37 +123,44 @@
 
 	<!-- Footer section starts from here -->
 	<footer>
-		
-
 		<div class="footer-col">
-			
-			
-			<div class="subscribe">
-				<div class="centrar1"><p>Estate al pendiente de nuestras novedades </p> </div>
-				
-				<input type="email" placeholder="Ingresa tu correo">
-				<a href="#" class="yellow">SUBSCRIBETE</a>
-			</div>
+			<h3 class="footer-title">Contactanos
+				<p>958032002
+					<i class="fas fa-phone"></i>
+				</p>
+				<p>alvaro.du@ucsp.edu.pe
+					<i class="fas fa-envelope"></i>
+				</p>
+			</h3>
 		</div>
-
-		
-		
+	
 		<div class="footer-col">
-			
-			<div class="copyright">
-				
+			<h3 class="footer-title">Direccion
+					<p>Calles los Perales 103 Tiabaya
+						<i class="fas fa-map-marker-alt"></i>
+					</p>
 
+					<p>aea</p>
+
+			</h3>
+			
+
+		</div>
+	
+		<div class="footer-col">
+			<h3 class="footer-title">Redes Sociales
 				<div class="pro-links">
 					<i class="fab fa-facebook"></i>
 					<i class="fab fa-instagram"></i>
 					<i class="fab fa-linkedin-in"></i>
-				</div>
-			</div>
-		</div>
-		
-	
 
-</footer>
+				</div>
+			</h3> 
+	
+		</div>
+
+
+	</footer>
 
 	<script>
 		// Show menu links on burger click
