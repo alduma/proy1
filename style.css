@@ -425,6 +425,9 @@ nav .navigation ul li a:hover
 .pro-links
 {
 	margin-top: 10px;
+	justify-content: center; /* Centra los íconos horizontalmente */
+    align-items: center; /* Alinea verticalmente los íconos dentro del contenedor */
+    gap: 15px; /* Espacio entre cada ícono, puedes ajustar según tus necesidades */
 }
 
 .pro-links i
@@ -967,6 +970,16 @@ p.author a {
     background-color: white; /* Color de la línea */
 }
 
+
+.footer-title::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -10px; /* Coloca la línea justo debajo del contenido */
+    width: 100%; /* Extiende la línea a lo largo del contenedor */
+    height: 2px; /* Grosor de la línea */
+    background-color: white; /* Color de la línea */
+}
 
 
 
