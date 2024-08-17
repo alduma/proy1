@@ -458,6 +458,8 @@ footer
 footer .footer-col
 {
 	padding-bottom: 0px;
+	text-align: center; /* Centra el texto dentro del contenedor */
+
 	
 }
 
