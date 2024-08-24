@@ -120,7 +120,7 @@ nav .navigation ul li a:hover
 {
 	background-image: linear-gradient(rgba(9, 5, 54, 0.3), rgba(5,4,46,0.7)), url("img/w1.jpg");
 	width: 100%;
-	height: 80vh;
+	height: 65vh;
 	background-size: cover;
 	background-position: center center;
 	display: flex;
@@ -140,15 +140,17 @@ nav .navigation ul li a:hover
 
 #home p
 {
+	margin-top: 30px;
+
 	width: 50%;
 	color: #fff;
-	font-size: 0.9rem;
+	font-size: 1.1rem;
 	line-height: 25px;
 }
 
 #home .btn
 {
-	margin-top: 30px;
+	margin-top: 40px;
 }
 
 #home a
@@ -816,6 +818,29 @@ footer .copyright .pro-links i:hover
     max-height: 45px;
 }
 
+.star {
+    margin: 15px 0;
+    display: flex;
+    justify-content: center; /* Centra las estrellas horizontalmente */
+}
+
+.star i {
+    cursor: pointer;
+    font-size: 1.2em;
+    margin: 0 8px; /* Añade espacio entre cada estrella */
+}
+
+.stock {
+    display: block;
+    margin: 20px 0; /* Añade espacio por encima y debajo del texto */
+    color: rgb(26, 0, 128);
+    font-weight: 800; /* Hace que la letra sea más gruesa */
+    font-size: 1.1em; /* Aumenta el tamaño de la letra */
+    text-align: center; /* Centra el texto de Stock */
+}
+
+
+
 .cart-products {
     position: absolute!important;
     top: 80px;
@@ -864,7 +889,7 @@ footer .copyright .pro-links i:hover
 
 .carts{
     text-align: center;
-	background: #edf1f2;
+	background: #0b82a0;
 	height: 106%;
 	position: relative;
 	
@@ -885,8 +910,8 @@ footer .copyright .pro-links i:hover
     position: absolute;
     top: 0;
     right: 0px;
-    background-color: rgb(0, 235, 129);
-    color: #fff;
+    background-color: rgb(0, 235, 149);
+    color: #bb2222;
     padding: 2px 7px 4px 21px;
     clip-path: polygon(25% 0%, 100% 0%, 100% 100%, 25% 100%, 0% 50%);
 }
@@ -1050,10 +1075,11 @@ p.author a {
 }
 
 
-.footer-title {
-    position: relative;
-    padding-top: 20px; /* Ajusta este valor según el espacio que necesites */
-    margin-top: 10px; /* Ajusta el espacio entre la línea y el contenido anterior */
+.title {
+    margin-top: 5px; /* Aumenta este valor para situar el título más abajo */
+    font-size: 1.2em; /* Opcional: ajusta el tamaño del título si es necesario */
+    font-weight: bold; /* Opcional: haz que el título sea más grueso */
+    text-align: center; /* Centra el título si es necesario */
 }
 
 
