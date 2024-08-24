@@ -900,6 +900,19 @@ footer .copyright .pro-links i:hover
 	
 }
 
+.carts b{
+	margin-top: 0px;
+	font-family: system-ui;
+    text-decoration: none;
+    background: rgb(200, 255, 0);
+    padding: 8px 10px;
+    color: #fff;
+    font-size: 17px;
+    text-transform: uppercase;
+    font-weight: 00;
+	
+}
+
 .carts a:hover{
     background: #fff;
     color: red;
@@ -926,7 +939,7 @@ footer .copyright .pro-links i:hover
 .cart-products .item .item-content{
     
 	margin: 0 19px;
-    width: 180px;
+    width: 190px;
 }
 .cart-products .item .item-content h5{
     margin: 0;
@@ -956,6 +969,15 @@ footer .copyright .pro-links i:hover
 	
 }
 .cart-products h3{
+    
+	margin-top: -5px;
+    align-items: center; /* Centra verticalmente el contenido */
+    justify-content: center; /* Centra horizontalmente el contenido */
+    display: flex; /* Utiliza flexbox para centrar el contenido */
+
+}
+
+.cart-products h5{
     
 	margin-top: 0px;
     align-items: center; /* Centra verticalmente el contenido */
