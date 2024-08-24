@@ -819,7 +819,7 @@ footer .copyright .pro-links i:hover
 .cart-products {
     position: absolute!important;
     top: 80px;
-    right: 10%; /* Ajuste general para mantener flexibilidad */
+    right: 10%;
     background-color: #fff;
     padding: 0 18px;
     box-shadow: 0 3px 10px rgb(0 0 0 / 20%);
@@ -827,7 +827,12 @@ footer .copyright .pro-links i:hover
     min-width: 290px;
     max-width: 90%;
     z-index: 1000;
+    min-height: 500px; /* Aumenta la altura mínima a 500px, ajusta según tus necesidades */
+    border: 5px solid #000; /* Borde negro de 2px */
+    border-radius: 5px; /* Esquinas redondeadas opcionales */
 }
+
+
 
 @media (min-width: 1024px) {
     .cart-products {
