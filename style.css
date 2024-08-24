@@ -816,17 +816,32 @@ footer .copyright .pro-links i:hover
     max-height: 45px;
 }
 
-
-.cart-products{
+.cart-products {
     position: absolute!important;
     top: 80px;
-    right:800px;
+    right: 10%; /* Ajuste general para mantener flexibilidad */
     background-color: #fff;
     padding: 0 18px;
     box-shadow: 0 3px 10px rgb(0 0 0 / 20%);
     display: none;
-
     min-width: 290px;
+    max-width: 90%;
+    z-index: 1000;
+}
+
+@media (min-width: 1024px) {
+    .cart-products {
+        right: 800px; /* Vuelve al valor original para pantallas grandes */
+        max-width: none; /* Elimina la restricción de ancho máximo */
+    }
+}
+
+@media (max-width: 768px) {
+    .cart-products {
+        right: 5%; /* Ajuste para pantallas pequeñas */
+        min-width: 80%;
+        max-width: 95%;
+    }
 }
 
 .cart:hover{
