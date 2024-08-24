@@ -88,9 +88,10 @@ function loadHtml(){
         row.innerHTML = `
             <img src="${image}" alt="">
             <div class="item-content">
-                <h5>${title}</h5>
-                <h5 class="cart-price">${price}$</h5>
-                <h6>Amount: ${amount}</h6>
+                <h7>Descripcion: <h8>${title}</h8></h7>
+                
+                <h7>Cantidad: <h8>${amount}</h8></h7>
+                <h7>Precio: <h8>${price}</h8></h7>
             </div>
             <span class="delete-product" data-id="${id}">X</span>
         `;
