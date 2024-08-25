@@ -1,8 +1,8 @@
 #about-home
 {
-	background-image: linear-gradient(rgba(9, 5, 54, 0.3), rgba(5,4,46,0.7)), url("img/w4.jpg");
+	background-image: linear-gradient(rgba(9, 5, 54, 0.3), rgba(5,4,46,0.7)), url("img/fondo2.jpg");
 	width: 100%;
-	height: 35vh;
+	height: 45vh;
 	background-size: cover;
 	background-position: center center;
 	display: flex;
@@ -89,18 +89,17 @@
 #trust
 {
 	text-align: center;
-	padding: 5vw;
+	padding: 5.5vw;
 }
 
 #trust h1
 {
-	margin-top: -50px;
 	text-align: center;
 }
 
 #trust p
 {
-	margin-top: 15px;
+	margin-top: 30px;
 	text-align: center;
 }
 
@@ -108,7 +107,7 @@
     margin-top: 70px;
     display: flex;
     justify-content: space-between;
-    padding: 0 50px; /* Agrega un padding lateral para separar las imágenes de las esquinas */
+    padding: 0 30px; /* Agrega un padding lateral para separar las imágenes de las esquinas */
 }
 
 

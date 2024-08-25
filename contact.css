@@ -1,6 +1,6 @@
 #contact
 {
-	background-image: linear-gradient(rgba(9, 5, 54, 0.3), rgba(5,4,46,0.7)), url("img/w1.jpg");
+	background-image: linear-gradient(rgba(9, 5, 54, 0.3), rgba(5,4,46,0.7)), url("img/fondo5.jfif");
 
 	padding: 4vw;
 	display: flex;
@@ -20,7 +20,7 @@
 
 #contact .getin h2
 {
-	color: #2c234d;
+	color: #eceaef;
 	font-size: 30px;
 	font-weight: 800;
 	line-height: .8;
@@ -29,7 +29,7 @@
 
 #contact .getin p
 {
-	color: #686875;
+	color: #eaeaf4;
 	line-height: 24px;
 	margin-bottom: 33px;
 	padding-bottom: 25px;
@@ -38,7 +38,7 @@
 
 #contact .getin h3
 {
-	color: #2c234d;
+	color: #f1f0f3;
 	font-size: 16px;
 	font-weight: 600;
 	line-height: 26px;
@@ -50,16 +50,38 @@
 	display: flex;
 }
 
-#contact .getin .getin-details div .get
+#contact .getin p
 {
+    text-align: center; /* Centra el texto dentro del contenedor */
+
+}
+
+#contact .getin h3
+{
+    text-align: center; /* Centra el texto dentro del contenedor */
+
+}
+
+#contact .getin .getin-details div
+{
+	display: flex;
+}
+
+
+#contact .getin .get
+{
+	text-align: center; /* Centra el texto dentro del contenedor */
+
 	font-size: 16px;
 	line-height: 22px;
-	color: #5838fc;
+	color: #58de2f;
 	margin-right: 20px;
 }
 
 #contact .getin .getin-details div p
 {
+	text-align: center; /* Centra el texto dentro del contenedor */
+
 	font-size: 14px;
 	border-bottom: none;
 	line-height: 22px;
@@ -69,12 +91,14 @@
 #contact .getin .getin-details .pro-links i
 {
 	margin-right: 8px;
+	color: #ebeaf1;
+
 }
 
 #contact .form
 {
 	width: 60%;
-	background: #f7f6fa;
+	background-image: linear-gradient(rgba(9, 5, 54, 0.3), rgba(5,4,46,0.7)), url("img/fondo4.jpg");
 	padding: 40px;
 	border-radius: 10px;
 	border: 5px solid #000; /* Borde negro de 2px */
