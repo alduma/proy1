@@ -877,7 +877,7 @@ footer .copyright .pro-links i:hover
 .cart-products  {
     position: absolute!important;
     top: 80px;
-    right: 10%;
+    right: 13%;
     background-color: #fff;
     padding: 0 18px;
     box-shadow: 0 3px 10px rgb(0 0 0 / 20%);
@@ -987,7 +987,7 @@ footer .copyright .pro-links i:hover
 /*float cart*/
 .cart-products .item img{
     width: 120px;
-	margin-left: 8px; /* Ajusta este valor para mover el contenido más a la derecha */
+	margin-left: 8.5px; /* Ajusta este valor para mover el contenido más a la derecha */
 
 	
 }
