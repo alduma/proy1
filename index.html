@@ -31,13 +31,35 @@
 			<p class="close-btn" onclick="closeBtn()">x</p>
 			<h3>Mi carrito</h3>
 			<div class="card-items">
+				<!-- Aquí se mostrarán los productos -->
 			</div>
 			<h4>Total: S/. <strong class="price-total">0</strong></h4>
 			<div class="carts">
-                <a href="" data-id="4" class="btn-add-cart">Hacer el pedido</a>
-            </div>
-
+				<a href="javascript:void(0);" onclick="showOrderForm()" class="btn-add-cart">Hacer el pedido</a>
+			</div>
 		</div>
+		
+		<!-- Formulario oculto -->
+		<div id="order-form" class="cart-products" style="display:none;">
+			<span class="close-modal" onclick="closeOrderForm()">&times;</span>
+			<h3>Realizar Pedido</h3>
+			<form action="https://formsubmit.co/alvaro.durand@ucsp.edu.pe" method="POST">
+				<label for="name">Nombre:</label>
+				<input type="text" id="name" name="name" required>
+		
+				<label for="phone">Teléfono:</label>
+				<input type="text" id="phone" name="phone" required>
+		
+				<input type="hidden" id="order-details" name="order-details">
+		
+				<button type="submit">Enviar Pedido</button>
+				<input type="hidden" name="_next" value="http://127.0.0.1:5500/">
+				<input type="hidden" name="_captcha" value="false">
+			</form>
+		</div>
+		
+		
+		
 		
 		
 		

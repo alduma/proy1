@@ -106,3 +106,27 @@ function loadHtml(){
  function clearHtml(){
     containerBuyCart.innerHTML = '';
  }
+
+ function showOrderForm() {
+    // Mostrar el formulario
+    document.getElementById('order-form').style.display = 'block';
+    
+    // Opcional: si deseas obtener los detalles del carrito
+    const cartItems = document.querySelectorAll('.card-items .item');
+    let orderDetails = '';
+
+    cartItems.forEach(item => {
+        const itemName = item.querySelector('.item-name').innerText;
+        const itemQuantity = item.querySelector('.item-quantity').innerText;
+        orderDetails += `${itemName} x ${itemQuantity}\n`;
+    });
+
+    // Colocar los detalles del pedido en el campo oculto
+    document.getElementById('order-details').value = orderDetails;
+}
+
+function closeOrderForm() {
+    // Ocultar el formulario
+    document.getElementById('order-form').style.display = 'none';
+}
+

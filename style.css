@@ -874,7 +874,7 @@ footer .copyright .pro-links i:hover
 
 
 
-.cart-products {
+.cart-products  {
     position: absolute!important;
     top: 80px;
     right: 10%;
@@ -1204,4 +1204,23 @@ button:active {
 button:focus {
     outline: none; /* Elimina el borde de enfoque predeterminado */
 }
+
+#order-form {
+    position: absolute!important;
+    top: 80px;
+    right: 53.5%; /* Ajusta la posición según sea necesario */
+    background-color: #fff;
+    padding: 0 18px;
+    box-shadow: 0 3px 10px rgb(0 0 0 / 20%);
+    display: none;
+    min-width: 400px;  /* Ancho mínimo más estrecho */
+    max-width: 400px;  /* Ancho máximo más estrecho */
+    z-index: 1000;
+    min-height: 500px; /* Mantén la misma altura */
+    border: 5px solid #000;
+    border-radius: 5px;
+}
+
+
+
 
