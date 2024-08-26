@@ -1222,5 +1222,20 @@ button:focus {
 }
 
 
+/* Ajustes para pantallas grandes */
+@media (min-width: 1024px) {
+    #order-form {
+        right: 53-5%; /* Mantiene la posición en pantallas grandes */
+        max-width: 300px; /* Ajusta el ancho máximo para pantallas grandes */
+    }
+}
 
+/* Ajustes para pantallas pequeñas */
+@media (max-width: 768px) {
+    #order-form {
+        right: 5%; /* Ajuste para pantallas pequeñas */
+        min-width: 80%; /* Ancho mínimo adaptado para móviles */
+        max-width: 90%; /* Ancho máximo adaptado para móviles */
+    }
+}
 
