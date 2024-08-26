@@ -894,7 +894,7 @@ footer .copyright .pro-links i:hover
 
 @media (min-width: 1024px) {
     .cart-products {
-        right: 800px; /* Vuelve al valor original para pantallas grandes */
+        right: 790px; /* Vuelve al valor original para pantallas grandes */
         max-width: none; /* Elimina la restricción de ancho máximo */
     }
 }
@@ -1208,13 +1208,13 @@ button:focus {
 #order-form {
     position: absolute!important;
     top: 80px;
-    right: 53.5%; /* Ajusta la posición según sea necesario */
+    right: 50%; /* Ajusta la posición según sea necesario */
     background-color: #fff;
     padding: 0 18px;
     box-shadow: 0 3px 10px rgb(0 0 0 / 20%);
     display: none;
-    min-width: 400px;  /* Ancho mínimo más estrecho */
-    max-width: 400px;  /* Ancho máximo más estrecho */
+    min-width: 415px;  /* Ancho mínimo más estrecho */
+    max-width: 410px;  /* Ancho máximo más estrecho */
     z-index: 1000;
     min-height: 500px; /* Mantén la misma altura */
     border: 5px solid #000;
@@ -1225,7 +1225,7 @@ button:focus {
 /* Ajustes para pantallas grandes */
 @media (min-width: 1024px) {
     #order-form {
-        right: 53-5%; /* Mantiene la posición en pantallas grandes */
+        right: 52.3%; /* Mantiene la posición en pantallas grandes */
         max-width: 300px; /* Ajusta el ancho máximo para pantallas grandes */
     }
 }
