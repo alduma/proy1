@@ -894,8 +894,9 @@ footer .copyright .pro-links i:hover
 
 @media (min-width: 1024px) {
     .cart-products {
-        right: 790px; /* Vuelve al valor original para pantallas grandes */
-        max-width: none; /* Elimina la restricción de ancho máximo */
+        right: 800px; /* Vuelve al valor original para pantallas grandes */
+		max-width: 380px; /* Ajusta el ancho máximo según sea necesario */
+
     }
 }
 
