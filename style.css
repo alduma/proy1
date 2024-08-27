@@ -212,13 +212,15 @@ nav .navigation ul li a:hover
 
 
 /*------------- Features section styling start -------------*/
-#features
-{
-	background-image: linear-gradient(rgba(9, 5, 54, 0.3), rgba(5,4,46,0.7)), url("img/f2.jpg");
-
-	padding: 5vw 8vw 5vw 8vw;
-	text-align: center;
+#features {
+    background-image: linear-gradient(rgba(9, 5, 54, 0.3), rgba(5, 4, 46, 0.7)), url("img/f2.jpg");
+    background-size: cover; /* Asegura que el fondo cubra toda la sección */
+    background-repeat: no-repeat; /* Evita que el fondo se repita */
+    background-position: center; /* Centra el fondo */
+    padding: 5vw 8vw; /* Ajusta el padding según sea necesario */
+    text-align: center; /* Centra el texto */
 }
+
 
 #features .fea-base
 {
@@ -247,7 +249,7 @@ nav .navigation ul li a:hover
 {
 	text-align: center;
 
-	font-size: 1.2rem;
+	font-size: 1.1rem;
 	font-weight: 600;
 	color: rgb(46, 46, 59);
 	padding: 13px 0 7px 0;
@@ -259,18 +261,28 @@ nav .navigation ul li a:hover
 	text-align: center;
 
 	color: #fff;
-	font-size: 1.1rem;
+	font-size: 1.0rem;
+
 	line-height: 25px;
 }
 
 #features .fea-box p
 {
-	text-align: justify;
+	text-align: center;
 
 	font-size: 1rem;
 	font-weight: 400;
 	color: rgba(13, 13, 14, 0.536);
 }
+
+#features h1
+{
+	text-align: center;
+	font-size: 2.0rem;
+	color: white;
+}
+
+
 /*------------- Features section styling end -------------*/
 
 
@@ -278,7 +290,9 @@ nav .navigation ul li a:hover
 #course
 {
 	background-image: linear-gradient(rgba(9, 5, 54, 0.3), rgba(5,4,46,0.7)), url("img/f3.jpg");
-
+	background-size: cover; /* Asegura que el fondo cubra toda la sección */
+    background-repeat: no-repeat; /* Evita que el fondo se repita */
+    background-position: center; /* Centra el fondo */
 	padding: 4vw 8vw 6vw 8vw;
 	text-align: center;
 }
@@ -330,6 +344,13 @@ nav .navigation ul li a:hover
 	position: absolute;
 	right: 15px;
 	bottom: 100px;
+}
+
+#course h1{
+	font-size: 2.0rem;
+	color: white;
+	text-align: center;
+
 }
 /*------------- Courses section styling end ------------*/
 
@@ -446,7 +467,9 @@ nav .navigation ul li a:hover
 #experts
 {
 	background-image: linear-gradient(rgba(9, 5, 54, 0.3), rgba(5,4,46,0.7)), url("img/f1.jpg");
-
+	background-size: cover; /* Asegura que el fondo cubra toda la sección */
+    background-repeat: no-repeat; /* Evita que el fondo se repita */
+    background-position: center; /* Centra el fondo */
 	padding: 4vw 8vw 4vw 8vw;
 	text-align: center;
 }
@@ -945,11 +968,12 @@ footer .copyright .pro-links i:hover
 
 .stock {
     display: block;
-    margin: 20px 0; /* Añade espacio por encima y debajo del texto */
+    margin: 15px 0; /* Añade espacio por encima y debajo del texto */
     color: rgb(26, 0, 128);
     font-weight: 800; /* Hace que la letra sea más gruesa */
     font-size: 1.1em; /* Aumenta el tamaño de la letra */
     text-align: center; /* Centra el texto de Stock */
+	margin-top: -15px;
 }
 
 
@@ -1003,8 +1027,8 @@ footer .copyright .pro-links i:hover
 
 .carts{
     text-align: center;
-	background: #0b82a0;
-	height: 106%;
+	background: #f3f3f3;
+	height: 105%;
 	position: relative;
 	
 }
@@ -1035,7 +1059,7 @@ footer .copyright .pro-links i:hover
 .carts a{
     font-family: system-ui;
     text-decoration: none;
-    background: rgb(0, 255, 76);
+    background:#d9ad2e;
     padding: 9px 23px;
     color: #fff;
     font-size: 17px;
@@ -1071,6 +1095,29 @@ footer .copyright .pro-links i:hover
 
 	
 }
+
+.image-container {
+    position: relative;
+    height: 200px; /* Establece la altura fija que desees para el contenedor */
+    overflow: hidden;
+}
+
+.image-container img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0; /* Inicia con todas las imágenes ocultas */
+    transition: opacity 0.5s ease; /* Transición suave para cuando aparezcan */
+}
+
+.hover-image:first-child {
+    opacity: 1; /* La imagen principal es visible por defecto */
+}
+
+
 
 .cart-products .item {
     display: flex;

@@ -132,3 +132,27 @@ function closeOrderForm() {
     const orderForm = document.getElementById('order-form');
     orderForm.style.display = 'none';
 }
+
+
+
+document.querySelectorAll('.image-container').forEach(container => {
+    const hoverImages = container.querySelectorAll('.hover-image');
+
+    let index = 0;
+    let interval;
+
+    container.addEventListener('mouseover', () => {
+        interval = setInterval(() => {
+            hoverImages[index].style.opacity = '0'; // Oculta la imagen actual
+            index = (index + 1) % hoverImages.length; // Cambia al siguiente índice
+            hoverImages[index].style.opacity = '1'; // Muestra la siguiente imagen
+        }, 1000); // Cambia la imagen cada segundo
+    });
+
+    container.addEventListener('mouseout', () => {
+        clearInterval(interval); // Detiene el cambio de imágenes al quitar el mouse
+        hoverImages.forEach(image => image.style.opacity = '0'); // Oculta todas las imágenes
+        index = 0;
+        hoverImages[index].style.opacity = '1'; // Vuelve a la imagen inicial
+    });
+});
