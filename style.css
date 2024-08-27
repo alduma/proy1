@@ -116,7 +116,7 @@ nav .navigation ul li a:hover
 
 
 /*------------- Hero section styling start --------------*/
-#home
+/*#home
 {
 	background-image: linear-gradient(rgba(9, 5, 54, 0.3), rgba(5,4,46,0.7)), url("img/f1.jpg");
 	width: 100%;
@@ -129,6 +129,19 @@ nav .navigation ul li a:hover
 	align-items: center;
 	text-align: center;
 	padding-top: 40px;
+}*/
+#home {
+    background-color: #8B0000; /* Rojo oscuro */
+    width: 100%;
+    height: 80vh;
+    background-size: cover; /* No es necesario con solo color sólido, pero se mantiene por si decides usar imágenes de fondo en el futuro */
+    background-position: center center; /* No es necesario con solo color sólido */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding-top: 40px;
 }
 
 #home h2
@@ -212,11 +225,21 @@ nav .navigation ul li a:hover
 
 
 /*------------- Features section styling start -------------*/
+
+/*
 #features {
     background-image: linear-gradient(rgba(9, 5, 54, 0.3), rgba(5, 4, 46, 0.7)), url("img/f2.jpg");
-    background-size: cover; /* Asegura que el fondo cubra toda la sección */
-    background-repeat: no-repeat; /* Evita que el fondo se repita */
-    background-position: center; /* Centra el fondo */
+    background-size: cover; 
+    background-repeat: no-repeat; 
+    background-position: center; 
+    padding: 5vw 8vw;
+    text-align: center; 
+}*/
+
+
+
+#features {
+    background-color: #7f7777; /* Elige el color gris que desees */
     padding: 5vw 8vw; /* Ajusta el padding según sea necesario */
     text-align: center; /* Centra el texto */
 }
@@ -287,15 +310,26 @@ nav .navigation ul li a:hover
 
 
 /*------------- Courses section styling start ------------*/
-#course
+
+/*#course
 {
 	background-image: linear-gradient(rgba(9, 5, 54, 0.3), rgba(5,4,46,0.7)), url("img/f3.jpg");
-	background-size: cover; /* Asegura que el fondo cubra toda la sección */
-    background-repeat: no-repeat; /* Evita que el fondo se repita */
-    background-position: center; /* Centra el fondo */
+	background-size: cover; 
+    background-repeat: no-repeat; 
+    background-position: center; 
 	padding: 4vw 8vw 6vw 8vw;
 	text-align: center;
+}*/
+
+#course {
+    background-color: #8B0000; /* Rojo oscuro */
+    background-size: cover; /* No es necesario con solo color sólido, pero se mantiene por si decides usar imágenes en el futuro */
+    background-repeat: no-repeat; /* No es necesario con solo color sólido */
+    background-position: center; /* No es necesario con solo color sólido */
+    padding: 4vw 8vw 6vw 8vw;
+    text-align: center;
 }
+
 
 #course .course-box
 {
@@ -356,7 +390,8 @@ nav .navigation ul li a:hover
 
 
 /*------------- Registration section styling start ----------*/
-#registration
+
+/*#registration
 {
 	padding: 6vw 8vw 6vw 8vw;
 	background-image: linear-gradient(rgba(99,112,168,0.5), rgba(81,91,233,0.5)),url("img/w2.jpeg");
@@ -367,9 +402,21 @@ nav .navigation ul li a:hover
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
-	gap: 20px; /* Añade espacio entre los divs si es necesario */
+	gap: 20px; 
 
+}*/
+
+#registration {
+    padding: 6vw 8vw 6vw 8vw;
+    background-color: #8B0000; /* Rojo oscuro */
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px; /* Añade espacio entre los divs si es necesario */
 }
+
 
 #registration .reminder,
 #registration .form1 {
@@ -469,15 +516,22 @@ nav .navigation ul li a:hover
 
 
 /*------------- Experts section styling starts ----------*/
-#experts
+
+/*#experts
 {
 	background-image: linear-gradient(rgba(9, 5, 54, 0.3), rgba(5,4,46,0.7)), url("img/f1.jpg");
-	background-size: cover; /* Asegura que el fondo cubra toda la sección */
-    background-repeat: no-repeat; /* Evita que el fondo se repita */
-    background-position: center; /* Centra el fondo */
+	background-size: cover; 
+    background-repeat: no-repeat; 
+    background-position: center; 
 	padding: 4vw 8vw 4vw 8vw;
 	text-align: center;
+}*/
+#experts {
+    background-color: #606060; /* Gris plomo */
+    padding: 4vw 8vw 4vw 8vw;
+    text-align: center;
 }
+
 
 #experts .expert-box {
     display: grid;
