@@ -1,10 +1,9 @@
 #about-home
 {
-	background-image: linear-gradient(rgba(9, 5, 54, 0.3), rgba(5,4,46,0.7)), url("img/fondo2.jpg");
+	background-image: linear-gradient(rgba(9, 5, 54, 0.3), rgba(5,4,46,0.7)), url("img/formulario1.jpg");
 	width: 100%;
 	height: 45vh;
-	background-size: cover;
-	background-position: center center;
+	
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
@@ -23,6 +22,10 @@
 
 #about-container
 {
+	background-image: linear-gradient(rgba(9, 5, 54, 0.3), rgba(5,4,46,0.7)), url("img/fondito7.jpg");
+	background-size: cover; 
+    background-repeat: no-repeat; 
+    background-position: center; 
 	display: flex;
 	align-items: center;
 	padding: 8vw 8vw 2vw 8vw;
@@ -48,7 +51,7 @@
 
 #about-container .about-text h2
 {
-	color: #29303B;
+	color: #ecedee;
 	padding-bottom: 15px;
 	margin-top: -150px;
 	text-align: center; 
@@ -57,9 +60,11 @@
 #about-container .about-text p
 {
 	margin-top: 24px;
-	color: #686F7A;
+	color: #eff1f4;
 	font-weight: 300;
 	text-align: justify;
+	font-size: 1.0rem;
+
 
 }
 
@@ -95,6 +100,10 @@
 /*------------------- Trust section starts from here ---------------*/
 #trust
 {
+	background-image: linear-gradient(rgba(9, 5, 54, 0.3), rgba(5,4,46,0.7)), url("img/fondito7.jpg");
+	background-size: cover; 
+    background-repeat: no-repeat; 
+    background-position: center; 
 	text-align: center;
 	padding: 5.5vw;
 }
@@ -102,26 +111,30 @@
 #trust h1
 {
 	text-align: center;
+	color: white;
+	font-size: 2.0rem;
+
 }
 
 #trust p
 {
 	margin-top: 30px;
+	color: white;
+	font-size: 1.0rem;
 	text-align: center;
 }
 
 #trust .trust-img {
-    margin-top: 70px;
+    margin-top: 30px;
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     padding: 0 30px; /* Agrega un padding lateral para separar las imágenes de las esquinas */
 }
 
-
-#trust .trust-img img
-{
-	width: 90px;
-	height: auto;
+#trust .trust-img img {
+    width: 15%; /* Ajusta el tamaño de la imagen según sea necesario */
+    height: auto; /* Mantiene la relación de aspecto de la imagen */
+    max-width: 100%; /* Asegura que la imagen no se desborde del contenedor */
 }
 /*------------------- Trust section ends from here ---------------*/
 

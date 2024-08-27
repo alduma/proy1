@@ -1,7 +1,9 @@
 #contact
 {
-	background-image: linear-gradient(rgba(9, 5, 54, 0.3), rgba(5,4,46,0.7)), url("img/fondo5.jfif");
-
+	background-image: linear-gradient(rgba(9, 5, 54, 0.3), rgba(5,4,46,0.7)), url("img/fondito7.jpg");
+	background-size: cover; 
+    background-repeat: no-repeat; 
+    background-position: center; 
 	padding: 4vw;
 	display: flex;
 	justify-content: space-between;
@@ -98,7 +100,7 @@
 #contact .form
 {
 	width: 60%;
-	background-image: linear-gradient(rgba(9, 5, 54, 0.3), rgba(5,4,46,0.7)), url("img/fondo4.jpg");
+	background-image: linear-gradient(rgba(9, 5, 54, 0.3), rgba(5,4,46,0.7)), url("img/formulario2.jpg");
 	padding: 40px;
 	border-radius: 10px;
 	border: 5px solid #000; /* Borde negro de 2px */
