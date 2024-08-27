@@ -355,7 +355,9 @@ nav .navigation ul li a:hover
 	color: #fff;
 
 }
-
+.reminder h1 {
+    color: #fff; /* Color de texto blanco */
+}
 .small-image {
     margin-top: 20px;
 	width: 200px; /* Ajusta el tamaño al 50% del contenedor */
@@ -1148,11 +1150,16 @@ footer .footer-col i {
     max-width: 700px; /* Ancho máximo del formulario */
     margin: 0 auto; /* Centra el formulario en la página */
     padding: 20px; /* Espacio interno del formulario */
-    background-color: #f9f9f9; /* Color de fondo claro */
+    background-color: #f1e0e0; /* Color de fondo claro */
     border-radius: 8px; /* Bordes redondeados */
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra del formulario */
     box-sizing: border-box; /* Incluye padding en el ancho total */
+    background-image: url("img/eee.jpg"); /* Ruta a tu imagen de fondo */
+    background-size: cover; /* Ajusta la imagen para que cubra todo el fondo */
+    background-position: center; /* Centra la imagen */
+    background-repeat: no-repeat; /* Evita que la imagen se repita */
 }
+
 
 /* Estilo del título del formulario */
 .centrar1 h4 {
@@ -1164,7 +1171,7 @@ footer .footer-col i {
 
 /* Estilo de cada columna en el formulario */
 .form-col {
-    margin-bottom: 15px; /* Espacio debajo de cada campo */
+    margin-bottom: 30px; /* Espacio debajo de cada campo */
 }
 
 /* Estilo de los campos del formulario */
@@ -1288,4 +1295,13 @@ button:focus {
 
 .form-col input[type="text"] {
     width: 300px; /* Ajusta este valor según lo que necesites */
+	background-color: #f04612; /* Color de fondo azul */
+    color: #f2e9e9; /* Color del texto dentro del cuadro */
+    border: none; /* Elimina el borde por defecto */
+    padding: 12.5px; /* Añade un poco de espacio interno */
+    border-radius: 5px; /* Bordes redondeados */
+}
+
+.form-col input[type="text"]::placeholder {
+    color: #fff; /* Color del texto del placeholder */
 }
