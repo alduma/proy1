@@ -118,7 +118,7 @@ nav .navigation ul li a:hover
 /*------------- Hero section styling start --------------*/
 #home
 {
-	background-image: linear-gradient(rgba(9, 5, 54, 0.3), rgba(5,4,46,0.7)), url("img/aa.jfif");
+	background-image: linear-gradient(rgba(9, 5, 54, 0.3), rgba(5,4,46,0.7)), url("img/f1.jpg");
 	width: 100%;
 	height: 80vh;
 	background-size: cover;
@@ -214,7 +214,7 @@ nav .navigation ul li a:hover
 /*------------- Features section styling start -------------*/
 #features
 {
-	background-image: linear-gradient(rgba(9, 5, 54, 0.3), rgba(5,4,46,0.7)), url("img/fondo1.jpg");
+	background-image: linear-gradient(rgba(9, 5, 54, 0.3), rgba(5,4,46,0.7)), url("img/f2.jpg");
 
 	padding: 5vw 8vw 5vw 8vw;
 	text-align: center;
@@ -277,7 +277,7 @@ nav .navigation ul li a:hover
 /*------------- Courses section styling start ------------*/
 #course
 {
-	background-image: linear-gradient(rgba(9, 5, 54, 0.3), rgba(5,4,46,0.7)), url("img/fondo3.jpg");
+	background-image: linear-gradient(rgba(9, 5, 54, 0.3), rgba(5,4,46,0.7)), url("img/f3.jpg");
 
 	padding: 4vw 8vw 6vw 8vw;
 	text-align: center;
@@ -445,7 +445,7 @@ nav .navigation ul li a:hover
 /*------------- Experts section styling starts ----------*/
 #experts
 {
-	background-image: linear-gradient(rgba(9, 5, 54, 0.3), rgba(5,4,46,0.7)), url("img/fondo4.jpg");
+	background-image: linear-gradient(rgba(9, 5, 54, 0.3), rgba(5,4,46,0.7)), url("img/f1.jpg");
 
 	padding: 4vw 8vw 4vw 8vw;
 	text-align: center;
@@ -454,22 +454,88 @@ nav .navigation ul li a:hover
 #experts .expert-box
 {
 	display: grid;
-	grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-template-columns: repeat(3, 1fr); /* Especifica 3 columnas de igual ancho */
 	grid-gap: 1rem;
 	margin-top: 50px;
 }
 
-#experts .expert-box .profile
-{
-	background: #fafaf1;
-	padding: 30px 10px;
-	box-shadow: rgba(17, 17, 26, 0.05) 0px 1px 0px, rgba(17, 17, 26, 0.1) 0px 0px 8px;
+#experts .expert-box .profile h6 {
+    color: red; /* Cambia el color del texto a rojo */
 }
 
-#experts .expert-box .profile:hover
-{
-	box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 50px;
+@keyframes christmas-border {
+    0% { border-image-source: url('img/gif2.gif'); }
+    100% { border-image-source: url('img/gif2.gif'); }
 }
+
+#experts .expert-box .profile {
+    position: relative;
+    background: #fafaf1;
+    padding: 30px 10px;
+    box-shadow: rgba(17, 17, 26, 0.05) 0px 1px 0px, rgba(17, 17, 26, 0.1) 0px 0px 8px;
+    margin: 10px;
+    border: 22px solid transparent; /* Espacio para el borde */
+    border-image: url('img/gif2.gif') 180 round; /* Establece la imagen del borde */
+    animation: christmas-border 1s infinite; /* Animación para el borde de Navidad */
+}
+
+
+#experts .expert-box .profile .rating {
+    display: flex;
+    align-items: center; /* Alinea verticalmente */
+    justify-content: center; /* Centra horizontalmente */
+    gap: 10px; /* Espacio entre estrellas y texto */
+    margin-bottom: 15px; /* Espacio debajo del rating */
+}
+
+#experts .expert-box .profile .stars {
+    display: flex;
+    align-items: center; /* Alinea las estrellas verticalmente */
+    gap: 2px; /* Espacio entre las estrellas */
+}
+
+#experts .expert-box .profile .star {
+    font-size: 25px; /* Tamaño de las estrellas */
+    color: grey; /* Color por defecto de las estrellas */
+}
+
+#experts .expert-box .profile .star.filled {
+    color: gold; /* Color de las estrellas llenas */
+}
+
+#experts .expert-box .profile .star.half {
+    position: relative;
+    display: inline-block;
+}
+
+#experts .expert-box .profile .star.half:before {
+    content: '\2605'; /* Estrella llena */
+    color: grey; /* Color de la parte no llena */
+    position: absolute;
+    left: 0;
+    width: 50%; /* Ajusta el tamaño de la estrella media */
+    overflow: hidden;
+}
+
+#experts .expert-box .profile .rating-text {
+    font-size: 18px; /* Tamaño del texto de la puntuación */
+    color: black; /* Color del texto de la puntuación */
+    font-weight: bold; /* Hacer que el texto sea negrita */
+}
+
+
+.small-image1 {
+    margin-top: 10px;
+    width: 130px; /* Ajusta el ancho de la imagen */
+    height: 130px; /* Ajusta la altura para que sea igual al ancho */
+    object-fit: cover; /* Asegura que la imagen cubra el área del contenedor sin distorsionarse */
+    border-radius: 50%; /* Hace que la imagen sea circular */
+    display: block; /* Asegura que no haya espacio debajo de la imagen */
+    margin-left: auto; /* Centra horizontalmente */
+    margin-right: auto; /* Centra horizontalmente */
+}
+
+
 
 .pro-links
 {
