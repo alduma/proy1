@@ -17,7 +17,7 @@
 
 #contact .getin
 {
-	width: 350px;
+	width: 550px;
 }
 
 #contact .getin h2
@@ -36,6 +36,10 @@
 	margin-bottom: 33px;
 	padding-bottom: 25px;
 	border-bottom: 1px solid #e5e4ed;
+	font-size: 1.0rem;
+	font-weight: 600;
+
+
 }
 
 #contact .getin h3
@@ -45,6 +49,8 @@
 	font-weight: 600;
 	line-height: 26px;
 	margin-bottom: 15px;
+	font-size: 1.3rem;
+
 }
 
 #contact .getin .getin-details div
@@ -109,7 +115,7 @@
 #contact .form h4
 {
 	font-size: 24px;
-	color: #2c234d;
+	color: #f8f7fb;
 	line-height: 30px;
 	margin-bottom: 8px;
 }
@@ -135,26 +141,46 @@
 	font-weight: 400;
 	border-radius: 3px;
 	border: none;
-	background: #fff;
-	color: #7e7c87;
+	background: #b9cc5a;
+	color: #dad8e6;
 	outline: none;
 	padding: 20px 30px;
 	margin-bottom: 20px;
 }
 
-#contact .form .form-col input,
-#contact .form .form-col textarea
+#contact .form .form-col input
 {
 	width: 100%;
 	font-size: 14px;
 	font-weight: 400;
 	border-radius: 3px;
 	border: none;
-	background: #fff;
+	background: #b9cc5a;
 	color: #7e7c87;
 	outline: none;
 	padding: 20px 30px;
 	margin-bottom: 20px;
+}
+
+.form-col textarea {
+    color: #ffffff; /* Cambia el color del texto a blanco */
+	background: #b9cc5a;
+    border: 1px solid #eeecec; /* Opcional: Cambia el color del borde */
+    padding: 10px; /* Ajusta el padding para mayor espacio dentro del textarea */
+    font-family: inherit; /* Usa la misma fuente que el resto de tu página */
+    font-size: 14px; /* Ajusta el tamaño del texto según sea necesario */
+}
+
+
+
+#contact .form .form-row input[type="text"]::placeholder {
+    color: #fff; /* Color del texto del placeholder */
+}
+#contact .form .form-row input[type="email"]::placeholder {
+    color: #fff; /* Color del texto del placeholder */
+}
+#contact .form .form-col input[type="textarea"]::placeholder {
+    color: #fff; /* Color del texto del placeholder */
 }
 
 

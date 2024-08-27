@@ -1333,6 +1333,7 @@ textarea {
     font-size: 14px; /* Tamaño de la fuente */
     box-sizing: border-box; /* Incluye padding y border en el width */
     transition: border-color 0.3s, box-shadow 0.3s; /* Transiciones suaves para los efectos */
+	
 }
 
 /* Estilo de los campos en el enfoque */
@@ -1453,3 +1454,4 @@ button:focus {
 .form-col input[type="text"]::placeholder {
     color: #fff; /* Color del texto del placeholder */
 }
+
