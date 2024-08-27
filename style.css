@@ -377,11 +377,16 @@ nav .navigation ul li a:hover
 
 }
 .reminder h1 {
-    color: #fff; /* Color de texto blanco */
+
+	font-size: 2.0rem;
+	color: white;
+	text-align: center;
+	
+
 }
 .small-image {
     margin-top: 20px;
-	width: 200px; /* Ajusta el tamaño al 50% del contenedor */
+	width: 120px; /* Ajusta el tamaño al 50% del contenedor */
     max-width: 600px; /* Limita el tamaño máximo a 200px */
     height: auto; /* Mantén la proporción original de la imagen */
 }
@@ -481,6 +486,11 @@ nav .navigation ul li a:hover
     margin-top: 50px;
 }
 
+#experts h1{
+	font-size: 2.0rem;
+	color: white;
+	text-align: center;
+}
 
 #experts .expert-box .profile h6 {
     color: red; /* Cambia el color del texto a rojo */
@@ -1260,9 +1270,9 @@ footer .footer-col i {
 
 /* Estilo general del formulario */
 .form1 {
-    max-width: 700px; /* Ancho máximo del formulario */
+    max-width: 600px; /* Ancho máximo del formulario */
     margin: 0 auto; /* Centra el formulario en la página */
-    padding: 20px; /* Espacio interno del formulario */
+    padding: 15px; /* Espacio interno del formulario */
     background-color: #f1e0e0; /* Color de fondo claro */
     border-radius: 8px; /* Bordes redondeados */
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra del formulario */
@@ -1284,7 +1294,7 @@ footer .footer-col i {
 
 /* Estilo de cada columna en el formulario */
 .form-col {
-    margin-bottom: 30px; /* Espacio debajo de cada campo */
+    margin-bottom: 17px; /* Espacio debajo de cada campo */
 }
 
 /* Estilo de los campos del formulario */
@@ -1295,7 +1305,7 @@ textarea {
     padding: 12px; /* Espacio interno en los campos */
     border: 1px solid #ddd; /* Borde del campo */
     border-radius: 5px; /* Bordes redondeados en los campos */
-    font-size: 16px; /* Tamaño de la fuente */
+    font-size: 14px; /* Tamaño de la fuente */
     box-sizing: border-box; /* Incluye padding y border en el width */
     transition: border-color 0.3s, box-shadow 0.3s; /* Transiciones suaves para los efectos */
 }
