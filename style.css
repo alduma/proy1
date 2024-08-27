@@ -451,13 +451,13 @@ nav .navigation ul li a:hover
 	text-align: center;
 }
 
-#experts .expert-box
-{
-	display: grid;
-    grid-template-columns: repeat(3, 1fr); /* Especifica 3 columnas de igual ancho */
-	grid-gap: 1rem;
-	margin-top: 50px;
+#experts .expert-box {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-gap: 1rem;
+    margin-top: 50px;
 }
+
 
 #experts .expert-box .profile h6 {
     color: red; /* Cambia el color del texto a rojo */
