@@ -50,7 +50,8 @@
 				<label for="phone">Teléfono:</label>
 				<input type="text" id="phone" name="phone" required>
 			
-				<input type="hidden" id="order-details" name="order-details">
+				<label for="order-details">Detalles del Pedido:</label>
+				<textarea id="order-details" name="order-details" rows="6" readonly></textarea>
 			
 				<button type="submit">Enviar Pedido</button>
 				<input type="hidden" name="_next" value="http://127.0.0.1:5500/">
@@ -253,26 +254,29 @@
 	<!-- Registration section starts from here -->
 	<section id="registration">
 		<div class="reminder">
-			<div class="centrar1"><h1>Subscribete para estar al dia en los nuevos productos que tenemos</h1></div>
-			<div class="centrar1"><h2>Variedad de Productos al alcance de tus manos</h2></div>
-
+			<div class="centrar1"><h1>Subscribete para estar al dia en los nuevos productos que tenemos</h1>
+			<img src="./img/registro.gif" alt="" class="small-image">
 		</div>
+		</div>
+
 
 		<div class="form1">
 			
 			<form action="https://formsubmit.co/alvaro.durand@ucsp.edu.pe" method="POST">
-				<div class="form-col">
-					<input type="text" name="name" placeholder="Ingresa tu nombre" required>
+				<div class="centrar1">
+					<div class="form-col">
+						<input type="text" name="name" placeholder="Ingresa tu nombre" required>
+					</div>
+					<div class="form-col">
+						<input type="text" name="email" placeholder="Ingresa tu correo" required>
+					</div>
+					<div class="form-col">
+						<input type="text" name="phone" placeholder="Ingresa tu número de teléfono" required>
+					</div>
 				</div>
-				<div class="form-col">
-					<input type="email" name="email" placeholder="Ingresa tu correo" required>
-				</div>
-				<div class="form-col">
-					<input type="text" name="subject"  placeholder="Telefono" required>
-				</div>
-				<div class="form-col">
-					<textarea name="message" cols="70" rows="1" placeholder="Informacion Adicional" required></textarea>
-				</div>
+				
+				
+				
 				<div class="centrar1">
 					<button type="submit">Enviar</button>
 				</div>

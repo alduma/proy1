@@ -30,8 +30,10 @@
 
 #about-container .about-img
 {
-	width: 60%;
-	padding-right: 60px;
+	width: 50%;
+	padding-right: 100px;
+	margin-top: -60px;
+	margin-bottom: 30px;
 }
 
 #about-container .about-img img
@@ -48,12 +50,17 @@
 {
 	color: #29303B;
 	padding-bottom: 15px;
+	margin-top: -150px;
+	text-align: center; 
 }
 
 #about-container .about-text p
 {
+	margin-top: 24px;
 	color: #686F7A;
 	font-weight: 300;
+	text-align: justify;
+
 }
 
 #about-container .about-text .about-fe

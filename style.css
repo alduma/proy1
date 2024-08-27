@@ -265,6 +265,8 @@ nav .navigation ul li a:hover
 
 #features .fea-box p
 {
+	text-align: justify;
+
 	font-size: 1rem;
 	font-weight: 400;
 	color: rgba(13, 13, 14, 0.536);
@@ -344,11 +346,21 @@ nav .navigation ul li a:hover
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
+	gap: 20px; /* Añade espacio entre los divs si es necesario */
+
 }
 
-#registration .reminder, #registration .reminder h1
-{
+#registration .reminder,
+#registration .form1 {
 	color: #fff;
+
+}
+
+.small-image {
+    margin-top: 20px;
+	width: 200px; /* Ajusta el tamaño al 50% del contenedor */
+    max-width: 600px; /* Limita el tamaño máximo a 200px */
+    height: auto; /* Mantén la proporción original de la imagen */
 }
 
 #registration .reminder .time
@@ -902,7 +914,7 @@ footer .copyright .pro-links i:hover
 
 @media (max-width: 768px) {
     .cart-products {
-        right: 3%; /* Ajuste para pantallas pequeñas */
+        right: 3%; /* Ajuste para pantallas pequeñas para ajustar el carrito mueve esta propiedad*/
         min-width: 80%;
         max-width: 95%;
     }
@@ -1211,7 +1223,7 @@ button:focus {
     top: 80px;
     right: 50%; /* Ajusta la posición según sea necesario */
     background-color: #fff;
-    padding: 0 18px;
+    padding: 0 35px;
     box-shadow: 0 3px 10px rgb(0 0 0 / 20%);
     display: none;
     min-width: 415px;  /* Ancho mínimo más estrecho */
@@ -1240,3 +1252,40 @@ button:focus {
     }
 }
 
+#order-form form {
+    display: flex;
+    flex-direction: column;
+}
+
+#order-form label {
+    margin-bottom: 15px; /* Aumenta la separación entre etiquetas y campos */
+}
+
+#order-form input[type="text"],
+#order-form textarea {
+    background-color: #d0e7ff; /* Color de fondo azul claro */
+    border: 1px solid #a0c3ff; /* Borde azul claro */
+    padding: 10px;
+    border-radius: 5px; /* Esquinas redondeadas */
+    margin-bottom: 15px; /* Separación entre los campos */
+}
+
+#order-form button {
+    align-self: center; /* Centra el botón horizontalmente */
+    background-color: #00ff2a; /* Fondo azul del botón */
+    color: #fff; /* Color del texto del botón */
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#order-form button:hover {
+    background-color: #0056b3; /* Fondo azul oscuro al pasar el ratón sobre el botón */
+}
+
+
+
+.form-col input[type="text"] {
+    width: 300px; /* Ajusta este valor según lo que necesites */
+}

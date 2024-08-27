@@ -108,25 +108,27 @@ function loadHtml(){
  }
 
  function showOrderForm() {
+    // Obtener el contenedor del formulario
+    const orderForm = document.getElementById('order-form');
     // Mostrar el formulario
-    document.getElementById('order-form').style.display = 'block';
-    
-    // Opcional: si deseas obtener los detalles del carrito
-    const cartItems = document.querySelectorAll('.card-items .item');
+    orderForm.style.display = 'block';
+
+    // Obtener los detalles de los productos seleccionados
+    const cartItems = document.querySelectorAll('.card-items .item'); // Asegúrate de que este selector coincida con los elementos de tu lista
     let orderDetails = '';
 
     cartItems.forEach(item => {
-        const itemName = item.querySelector('.item-name').innerText;
-        const itemQuantity = item.querySelector('.item-quantity').innerText;
-        orderDetails += `${itemName} x ${itemQuantity}\n`;
+        const itemName = item.querySelector('.item-content h8').textContent; // Ajusta según la estructura de HTML
+        const itemQuantity = item.querySelector('.item-content h7:nth-child(2) h8').textContent; // Ajusta según la estructura de HTML
+        orderDetails += `${itemName} - ${itemQuantity}\n`; // Ajusta el formato según lo necesites
     });
 
-    // Colocar los detalles del pedido en el campo oculto
+    // Actualizar el campo de detalles del pedido
     document.getElementById('order-details').value = orderDetails;
 }
 
+// Función para cerrar el formulario de pedido
 function closeOrderForm() {
-    // Ocultar el formulario
-    document.getElementById('order-form').style.display = 'none';
+    const orderForm = document.getElementById('order-form');
+    orderForm.style.display = 'none';
 }
-
