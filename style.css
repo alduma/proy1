@@ -1328,7 +1328,7 @@ footer .footer-col i {
 
 /* Estilo general del formulario */
 .form1 {
-    max-width: 600px; /* Ancho máximo del formulario */
+    max-width:250px; /* Ancho máximo del formulario */
     margin: 0 auto; /* Centra el formulario en la página */
     padding: 15px; /* Espacio interno del formulario */
     background-color: #f1e0e0; /* Color de fondo claro */
@@ -1339,6 +1339,7 @@ footer .footer-col i {
     background-size: cover; /* Ajusta la imagen para que cubra todo el fondo */
     background-position: center; /* Centra la imagen */
     background-repeat: no-repeat; /* Evita que la imagen se repita */
+	margin-left: 0px;
 }
 
 
@@ -1475,12 +1476,12 @@ button:focus {
 
 
 .form-col input[type="text"] {
-    width: 450px; /* Ajusta este valor según lo que necesites */
+    width: 220px; /* Ajusta este valor según lo que necesites */
 	background-color: #b9cc5a;
 	/* Color de fondo azul */
     color: #f2e9e9; /* Color del texto dentro del cuadro */
     border: none; /* Elimina el borde por defecto */
-    padding: 13px; /* Añade un poco de espacio interno */
+    padding: 10px; /* Añade un poco de espacio interno */
     border-radius: 5px; /* Bordes redondeados */
 }
 
