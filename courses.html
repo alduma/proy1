@@ -3,14 +3,16 @@
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>CATALOGO</title>
+	<title>TIENDA-NELLY</title>
 
 	<!-- font Awesome CDN link -->
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" />
 
+	<link rel="icon" type="image/svg+xml" href="./img/favicon.svg" />
+
+
 	<!-- External CSS -->
 	<link rel="stylesheet" href="style.css">
-	<link rel="stylesheet" href="about.css">
 
 	<!-- JQuery CDN link -->
 	<script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
@@ -29,14 +31,33 @@
 			<p class="close-btn" onclick="closeBtn()">x</p>
 			<h3>Mi carrito</h3>
 			<div class="card-items">
+				<!-- Aquí se mostrarán los productos -->
 			</div>
 			<h4>Total: S/. <strong class="price-total">0</strong></h4>
 			<div class="carts">
-                <a href="" data-id="4" class="btn-add-cart">Hacer el pedido</a>
-            </div>
-
+				<a href="javascript:void(0);" onclick="showOrderForm()" class="btn-add-cart">Hacer el pedido</a>
+			</div>
 		</div>
 		
+		<!-- Formulario oculto -->
+		<div id="order-form" class="cart-products" style="display:none;">
+			<span class="close-modal" onclick="closeOrderForm()">&times;</span>
+			<h3>Realizar Pedido</h3>
+			<form action="https://formsubmit.co/alvaro.durand@ucsp.edu.pe" method="POST">
+				<label for="name">Nombre:</label>
+				<input type="text" id="name" name="name" required>
+			
+				<label for="phone">Teléfono:</label>
+				<input type="text" id="phone" name="phone" required>
+			
+				<label for="order-details">Detalles del Pedido:</label>
+				<textarea id="order-details" name="order-details" rows="6" readonly></textarea>
+			
+				<button type="submit">Enviar Pedido</button>
+				<input type="hidden" name="_next" value="http://127.0.0.1:5500/">
+				<input type="hidden" name="_captcha" value="false">
+			</form>
+		</div>
 		
 		
 		<div class="navigation">
@@ -70,111 +91,123 @@
 				
 	
 				<div class="carts">
-					<div>
-						<img src="./img/a1.jpg" alt="">
+					<div class="image-container">
+						<img src="./img/a1.jpg" alt="" class="hover-image">
+						<img src="./img/a2.jpg" alt="" class="hover-image">
+						<img src="./img/a3.jpg" alt="" class="hover-image">
 						<p><span>20</span>$</p>
 					</div>
 					
 					<p class="title">Combo 3 En 1 Gaming Teclado</p>
-					<div class="star">
+					<!--<div class="star">
 						<i class="fa-solid fa-star" data-value="1"></i>
 						<i class="fa-solid fa-star" data-value="2"></i>
 						<i class="fa-solid fa-star" data-value="3"></i>
 						<i class="fa-solid fa-star" data-value="4"></i>
 						<i class="fa-solid fa-star" data-value="5"></i>
-					</div>
-					<span class="stock">STOCK - 239</span>
+					</div>-->
+					<span class="stock">S./ 239.50</span>
 					<a href="" data-id="1" class="btn-add-cart">COMPRAR</a>
 				</div>
 	
 				<div class="carts">
-					<div>
-						<img src="./img/a1.jpg" alt="">
+					<div class="image-container">
+						<img src="./img/a1.jpg" alt="" class="hover-image">
+						<img src="./img/a2.jpg" alt="" class="hover-image">
+						<img src="./img/a3.jpg" alt="" class="hover-image">
 						<p><span>20</span>$</p>
 					</div>
 					
 					<p class="title">Combo 3 En 1 Gaming Teclado</p>
-					<div class="star">
+					<!--<div class="star">
 						<i class="fa-solid fa-star" data-value="1"></i>
 						<i class="fa-solid fa-star" data-value="2"></i>
 						<i class="fa-solid fa-star" data-value="3"></i>
 						<i class="fa-solid fa-star" data-value="4"></i>
 						<i class="fa-solid fa-star" data-value="5"></i>
-					</div>
-					<span class="stock">STOCK - 239</span>
+					</div>-->
+					<span class="stock">S./ 239.50</span>
 					<a href="" data-id="2" class="btn-add-cart">COMPRAR</a>
 				</div>
-	
+
 				<div class="carts">
-					<div>
-						<img src="./img/a1.jpg" alt="">
+					<div class="image-container">
+						<img src="./img/a1.jpg" alt="" class="hover-image">
+						<img src="./img/a2.jpg" alt="" class="hover-image">
+						<img src="./img/a3.jpg" alt="" class="hover-image">
 						<p><span>20</span>$</p>
 					</div>
 					
 					<p class="title">Combo 3 En 1 Gaming Teclado</p>
-					<div class="star">
+					<!--<div class="star">
 						<i class="fa-solid fa-star" data-value="1"></i>
 						<i class="fa-solid fa-star" data-value="2"></i>
 						<i class="fa-solid fa-star" data-value="3"></i>
 						<i class="fa-solid fa-star" data-value="4"></i>
 						<i class="fa-solid fa-star" data-value="5"></i>
-					</div>
-					<span class="stock">STOCK - 239</span>
+					</div>-->
+					<span class="stock">S./ 239.50</span>
 					<a href="" data-id="3" class="btn-add-cart">COMPRAR</a>
 				</div>
-	
+
 				<div class="carts">
-					<div>
-						<img src="./img/a1.jpg" alt="">
+					<div class="image-container">
+						<img src="./img/a1.jpg" alt="" class="hover-image">
+						<img src="./img/a2.jpg" alt="" class="hover-image">
+						<img src="./img/a3.jpg" alt="" class="hover-image">
 						<p><span>20</span>$</p>
 					</div>
 					
 					<p class="title">Combo 3 En 1 Gaming Teclado</p>
-					<div class="star">
+					<!--<div class="star">
 						<i class="fa-solid fa-star" data-value="1"></i>
 						<i class="fa-solid fa-star" data-value="2"></i>
 						<i class="fa-solid fa-star" data-value="3"></i>
 						<i class="fa-solid fa-star" data-value="4"></i>
 						<i class="fa-solid fa-star" data-value="5"></i>
-					</div>
-					<span class="stock">STOCK - 239</span>
+					</div>-->
+					<span class="stock">S./ 239.50</span>
 					<a href="" data-id="4" class="btn-add-cart">COMPRAR</a>
 				</div>
-	
+
 				<div class="carts">
-					<div>
-						<img src="./img/a1.jpg" alt="">
+					<div class="image-container">
+						<img src="./img/a1.jpg" alt="" class="hover-image">
+						<img src="./img/a2.jpg" alt="" class="hover-image">
+						<img src="./img/a3.jpg" alt="" class="hover-image">
 						<p><span>20</span>$</p>
 					</div>
 					
 					<p class="title">Combo 3 En 1 Gaming Teclado</p>
-					<div class="star">
+					<!--<div class="star">
 						<i class="fa-solid fa-star" data-value="1"></i>
 						<i class="fa-solid fa-star" data-value="2"></i>
 						<i class="fa-solid fa-star" data-value="3"></i>
 						<i class="fa-solid fa-star" data-value="4"></i>
 						<i class="fa-solid fa-star" data-value="5"></i>
-					</div>
-					<span class="stock">STOCK - 239</span>
-					<a href="" data-id="4" class="btn-add-cart">COMPRAR</a>
+					</div>-->
+					<span class="stock">S./ 239.50</span>
+					<a href="" data-id="5" class="btn-add-cart">COMPRAR</a>
 				</div>
-	
+
 				<div class="carts">
-					<div>
-						<img src="./img/a1.jpg" alt="">
+					<div class="image-container">
+						<img src="./img/a1.jpg" alt="" class="hover-image">
+						<img src="./img/a2.jpg" alt="" class="hover-image">
+						<img src="./img/a3.jpg" alt="" class="hover-image">
 						<p><span>20</span>$</p>
 					</div>
 					
 					<p class="title">Combo 3 En 1 Gaming Teclado</p>
-					<div class="star">
+					<!--<div class="star">
 						<i class="fa-solid fa-star" data-value="1"></i>
 						<i class="fa-solid fa-star" data-value="2"></i>
 						<i class="fa-solid fa-star" data-value="3"></i>
 						<i class="fa-solid fa-star" data-value="4"></i>
 						<i class="fa-solid fa-star" data-value="5"></i>
-					</div>
-					<span class="stock">STOCK - 239</span>
-					<a href="" data-id="4" class="btn-add-cart">COMPRAR</a>
+					</div>-->
+					<span class="stock">S./ 239.50</span>
+					<a href="" data-id="6" class="btn-add-cart">COMPRAR</a>
 				</div>
 	
 	
