@@ -199,19 +199,52 @@
     margin: 0 auto;
 }
 
-#map
-{
-	width: 100%;
-	height: 70vh;
-	margin: 0 auto; /* Centra horizontalmente */
 
+
+#map-container {
+    width: 100%; /* Ajusta el ancho al 100% del contenedor padre */
+    background-image: url("img/formulario3.jpg"); /* Reemplaza con la ruta a tu imagen */
+    text-align: center; /* Centra el texto del título */
+    padding-top: 30px; /* Espacio arriba del título */
+    padding-bottom: 30px; /* Espacio abajo del contenedor */
+    border: none; /* Asegúrate de que no haya bordes */
+    box-shadow: none; /* Asegúrate de que no haya sombras */
 }
 
-#map iframe
-{
-	width: 100%;
-	height: 100%;
+#map-container h2 {
+    color: #FFFFFF; /* Color del texto del título */
+    margin-top: 20px;
+	margin-bottom: 40px; /* Espacio debajo del título */
+    z-index: 1; /* Asegura que el título esté sobre el fondo rojo */
 }
+
+#map {
+    width: 90%; /* Ajusta el ancho al contenedor */
+    padding-top: 60%; /* Mantiene la relación de aspecto cuadrada */
+    position: relative; /* Para posicionar el iframe correctamente */
+    margin: 0 auto; /* Elimina el margen adicional para evitar líneas blancas */
+    background-color: #FF0000; /* Color de fondo rojo */
+    overflow: hidden; /* Asegura que el iframe no sobresalga del contenedor */
+    border: none; /* Asegúrate de que no haya bordes */
+    box-shadow: none; /* Asegúrate de que no haya sombras */
+	margin-bottom: 40px;
+}
+
+#map iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: none; /* Elimina el borde del iframe */
+    z-index: 0; /* Asegura que el iframe se coloque sobre el fondo rojo */
+}
+
+
+
+
+
+
 
 
 /*-------------------------------------------------------*/
