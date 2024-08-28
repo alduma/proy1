@@ -1413,8 +1413,8 @@ button:focus {
     padding: 0 35px;
     box-shadow: 0 3px 10px rgb(0 0 0 / 20%);
     display: none;
-    min-width: 415px;  /* Ancho mínimo más estrecho */
-    max-width: 410px;  /* Ancho máximo más estrecho */
+    min-width: 381px;
+    max-width: 90%;
     z-index: 1000;
     min-height: 500px; /* Mantén la misma altura */
     border: 5px solid #000;
@@ -1434,10 +1434,14 @@ button:focus {
 @media (max-width: 768px) {
     #order-form {
         right: 5%; /* Ajuste para pantallas pequeñas */
+		left: 5%; /* Evita que se mueva demasiado hacia la izquierda */
+
         min-width: 80%; /* Ancho mínimo adaptado para móviles */
         max-width: 90%; /* Ancho máximo adaptado para móviles */
     }
 }
+
+
 
 #order-form form {
     display: flex;
