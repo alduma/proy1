@@ -1070,12 +1070,12 @@ footer .copyright .pro-links i:hover
 
     }
 }
-
 @media (max-width: 768px) {
     .cart-products {
-        right: 3%; /* Ajuste para pantallas pequeñas para ajustar el carrito mueve esta propiedad*/
-        min-width: 80%;
-        max-width: 95%;
+        right: 5%; /* Limita lo cerca que puede estar del borde derecho */
+        left: 5%; /* Evita que se mueva demasiado hacia la izquierda */
+        min-width: 70%;
+        max-width: 90%;
     }
 }
 
