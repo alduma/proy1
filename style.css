@@ -221,7 +221,115 @@ nav .navigation ul li a:hover
 
 /*------------- Hero section styling end --------------*/
 
+#features1 {
+    background-image: linear-gradient(rgba(9, 5, 54, 0.3), rgba(5, 4, 46, 0.7)), url("img/fondito7.jpg");
+    background-size: cover; 
+    background-repeat: no-repeat; 
+    background-position: center; 
+    padding: 5vw 8vw;
+    text-align: center; 
+}
 
+
+
+
+#features1 .fea-base
+{
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+	grid-gap: 1rem;
+	margin-top: 50px;
+}
+
+#features1 .fea-box {
+    background: #edf1f2;
+    text-align: start;
+    padding: 1.2rem;
+    border-radius: 6px;
+    margin-bottom: 25px;
+    position: relative;
+    z-index: 0;
+}
+
+#features1 .fea-box:before {
+    content: '';
+    position: absolute;
+    top: -4px; /* Coloca el pseudo-elemento justo fuera del borde */
+    left: -4px;
+    right: -4px;
+    bottom: -4px;
+    border-radius: 6px;
+    background: none; /* Sin fondo */
+    border: 7px solid; /* El borde que cambia de color */
+    border-image: linear-gradient(90deg, #ff0000, #00ff00, #0000ff, #ff00ff) 1; /* El gradiente para el borde */
+    z-index: -1; /* Para que esté detrás del contenido */
+    animation: borderAnimation 1s linear infinite; /* Animación del borde */
+}
+@keyframes borderAnimation {
+    0% {
+        border-image-source: linear-gradient(90deg, #ff0000, #000000); /* Rojo y negro */
+    }
+    100% {
+        border-image-source: linear-gradient(90deg, #000000, #ff0000); /* Negro y rojo */
+    }
+}
+
+
+
+#features1 .fea-box img {
+    max-width: 80%; /* Ajusta el tamaño según tus necesidades */
+    height: auto;
+    display: block;
+    margin: 20px auto 0 auto; /* Centra la imagen y añade un margen superior */
+    border-radius: 8px; /* Opcional: bordes redondeados */
+}
+
+
+
+
+
+#features1 .fea-box i
+{
+	font-size: 2.3rem;
+	color: rgb(44, 44, 80);
+}
+
+#features1 .fea-box h3
+{
+	text-align: center;
+
+	font-size: 1.1rem;
+	font-weight: 600;
+	color: rgb(46, 46, 59);
+	padding: 13px 0 7px 0;
+}
+
+#features1 p
+{
+	margin-top: 10px;
+	text-align: center;
+
+	color: #fff;
+	font-size: 1.0rem;
+
+	line-height: 25px;
+}
+
+#features1 .fea-box p
+{
+	text-align: center;
+
+	font-size: 1rem;
+	font-weight: 400;
+	color: rgba(13, 13, 14, 0.536);
+}
+
+#features1 h1
+{
+	text-align: center;
+	font-size: 2.0rem;
+	color: white;
+}
 /*------------- Features section styling start -------------*/
 
 
@@ -280,7 +388,13 @@ nav .navigation ul li a:hover
 
 
 
-
+#features .fea-box img {
+    max-width: 80%; /* Ajusta el tamaño según tus necesidades */
+    height: auto;
+    display: block;
+    margin: 20px auto 0 auto; /* Centra la imagen y añade un margen superior */
+    border-radius: 8px; /* Opcional: bordes redondeados */
+}
 
 
 
@@ -1327,7 +1441,7 @@ footer .footer-col i {
 
 /* Estilo general del formulario */
 .form1 {
-    max-width:250px; /* Ancho máximo del formulario */
+    max-width:490px; /* Ancho máximo del formulario */
     margin: 0 auto; /* Centra el formulario en la página */
     padding: 15px; /* Espacio interno del formulario */
     background-color: #f1e0e0; /* Color de fondo claro */
@@ -1336,8 +1450,8 @@ footer .footer-col i {
     box-sizing: border-box; /* Incluye padding en el ancho total */
     background-image: url("img/formulario2.jpg"); /* Ruta a tu imagen de fondo */
     background-size: cover; /* Ajusta la imagen para que cubra todo el fondo */
-    background-position: center; /* Centra la imagen */
-    background-repeat: no-repeat; /* Evita que la imagen se repita */
+	border: 5px solid black; /* Borde de color negro */
+
 }
 
 
@@ -1478,7 +1592,7 @@ button:focus {
 
 
 .form-col input[type="text"] {
-    width: 220px; /* Ajusta este valor según lo que necesites */
+    width: 420px; /* Ajusta este valor según lo que necesites */
 	background-color: #b9cc5a;
 	/* Color de fondo azul */
     color: #f2e9e9; /* Color del texto dentro del cuadro */
@@ -1489,4 +1603,28 @@ button:focus {
 
 .form-col input[type="text"]::placeholder {
     color: #fff; /* Color del texto del placeholder */
+}
+
+
+@media (max-width: 768px) {
+    #registration {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .reminder, .form1 {
+        flex: none;
+        width: 100%; /* Asegura que cada div ocupe el 100% del ancho en pantallas pequeñas */
+        padding: 10px;
+    }
+
+    .form1 {
+        max-width: 90%; /* Reduce el ancho máximo del formulario para que se vea mejor en pantallas pequeñas */
+        padding: 10px;
+        background-size: contain; /* Ajusta la imagen de fondo */
+    }
+
+    .form-col input[type="text"] {
+        width: 100%; /* Asegura que los inputs se adapten al ancho disponible */
+    }
 }
