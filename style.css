@@ -672,17 +672,56 @@ nav .navigation ul li a:hover
     100% { border-image-source: url('img/gif2.gif'); }
 }
 
-#experts .expert-box .profile {
+ /*cuadro de las reseñas*/
+ #experts .expert-box .profile {
     position: relative;
     background: #fafaf1;
     padding: 30px 10px;
     box-shadow: rgba(17, 17, 26, 0.05) 0px 1px 0px, rgba(17, 17, 26, 0.1) 0px 0px 8px;
     margin: 10px;
-    border: 22px solid transparent; /* Espacio para el borde */
-    border-image: url('img/gif2.gif') 180 round; /* Establece la imagen del borde */
-    animation: christmas-border 1s infinite; /* Animación para el borde de Navidad */
+    border: none; /* Elimina el borde normal */
+    z-index: 0; /* Asegura que el borde LED esté detrás del contenido */
 }
 
+#experts .expert-box .profile:before {
+    content: '';
+    position: absolute;
+    top: -4px; /* Coloca el pseudo-elemento justo fuera del borde */
+    left: -4px;
+    right: -4px;
+    bottom: -4px;
+    border-radius: 6px;
+    background: none; /* Sin fondo */
+    border: 7px solid; /* El borde que cambia de color */
+    border-image: linear-gradient(90deg, #ff0000, #00ff00, #0000ff, #ff00ff) 1; /* El gradiente para el borde */
+    z-index: -1; /* Para que esté detrás del contenido */
+    animation: borderAnimation 0.5s linear infinite; /* Animación del borde */
+}
+@keyframes borderAnimation {
+    0% {
+        border-image-source: linear-gradient(90deg, #1d1d1d, #2d2d2d, #3d3d3d, #4d4d4d, #5d5d5d); /* Gradiente inicial */
+    }
+    100% {
+        border-image-source: linear-gradient(90deg, #5d5d5d, #4d4d4d, #3d3d3d, #2d2d2d, #1d1d1d); /* Gradiente final */
+    }
+}
+
+.profile-line {
+    border: 0; /* Elimina el borde por defecto */
+    height: 1px; /* Altura de la línea horizontal */
+    background: #171717; /* Color de la línea horizontal */
+    margin: 10px 0; /* Espacio alrededor de la línea */
+}
+
+#experts .expert-box .profile p {
+    margin-top: 10px;
+	color: black;
+	text-align: justify;
+	font-size: 0.9rem;
+	margin-left: 5px;
+	margin-right: 5px;
+
+}
 
 #experts .expert-box .profile .rating {
     display: flex;
@@ -729,7 +768,7 @@ nav .navigation ul li a:hover
 
 
 .small-image1 {
-    margin-top: 10px;
+    margin-top: -10px;
     width: 130px; /* Ajusta el ancho de la imagen */
     height: 130px; /* Ajusta la altura para que sea igual al ancho */
     object-fit: cover; /* Asegura que la imagen cubra el área del contenedor sin distorsionarse */
