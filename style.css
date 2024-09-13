@@ -1667,3 +1667,34 @@ button:focus {
         width: 100%; /* Asegura que los inputs se adapten al ancho disponible */
     }
 }
+
+
+#success-message {
+    display: none; /* Inicialmente oculto */
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); /* Centra el mensaje en la pantalla */
+    width: auto; /* Ajusta el ancho automáticamente */
+    height: auto; /* Ajusta la altura automáticamente */
+    max-width: 80%; /* Limita el ancho máximo */
+    max-height: 80%; /* Limita la altura máxima */
+    background: rgba(0, 0, 0, 0.7); /* Fondo negro semi-transparente */
+    color: #ffffff; /* Color del texto blanco */
+    padding: 20px; /* Mayor padding para el mensaje */
+    border-radius: 10px; /* Bordes redondeados más grandes */
+    z-index: 1000;
+    text-align: center; /* Centra el texto dentro del mensaje */
+}
+
+#success-message img {
+    vertical-align: middle;
+    margin-right: 10px;
+    width: 50px; /* Tamaño del GIF aumentado */
+    height: 50px; /* Tamaño del GIF aumentado */
+}
+
+#success-message span {
+    font-size: 1.5em; /* Tamaño del texto aumentado */
+    font-weight: bold; /* Texto en negrita */
+}

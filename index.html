@@ -294,7 +294,7 @@
 			<h6>Marcelo D.</h6>
 			<hr class="profile-line"> <!-- Línea horizontal agregada aquí -->
 
-			<p>Estoy encantada con los adornos navideños que adquirí. La atención al detalle es 
+			<p>Estoy encantado con los adornos navideños que adquirí. La atención al detalle es 
 				impresionante, y se nota que cada pieza fue hecha con mucho amor.</p>
 			<hr class="profile-line"> <!-- Línea horizontal agregada aquí -->
 
@@ -318,40 +318,40 @@
 
 	<!-- Registration section starts from here -->
 	<section id="registration">
-		<div class="reminder">
-			<div class="centrar1"><h1>Subscribete para estar al dia en los nuevos productos que tenemos </h1>
-			<div><img src="./img/registro.gif" alt="" class="small-image"></div>
-		</div>
-		</div>
+        <div class="reminder">
+            <div class="centrar1">
+                <h1>Subscríbete para estar al día en los nuevos productos que tenemos</h1>
+                <div><img src="./img/registro.gif" alt="" class="small-image"></div>
+            </div>
+        </div>
 
+        <div class="form1">
+            <form id="myForm" action="https://formsubmit.co/alvaro.durand@ucsp.edu.pe" method="POST">
+                <div class="centrar1">
+                    <div class="form-col">
+                        <input type="text" name="name" placeholder="Ingresa tu nombre" required>
+                    </div>
+                    <div class="form-col">
+                        <input type="text" name="email" placeholder="Ingresa tu correo" required>
+                    </div>
+                    <div class="form-col">
+                        <input type="text" name="phone" placeholder="Ingresa tu número de teléfono" required>
+                    </div>
+                </div>
+                <div class="centrar1">
+                    <button type="submit">Enviar</button>
+                </div>
+                <input type="hidden" name="_next" value="http://127.0.0.1:5500/">
+                <input type="hidden" name="_captcha" value="false">
+            </form>
+        </div>
 
-		<div class="form1">
-			
-			<form action="https://formsubmit.co/alvaro.durand@ucsp.edu.pe" method="POST">
-				<div class="centrar1">
-					<div class="form-col">
-						<input type="text" name="name" placeholder="Ingresa tu nombre" required>
-					</div>
-					<div class="form-col">
-						<input type="text" name="email" placeholder="Ingresa tu correo" required>
-					</div>
-					<div class="form-col">
-						<input type="text" name="phone" placeholder="Ingresa tu número de teléfono" required>
-					</div>
-				</div>
-				
-				
-				
-				<div class="centrar1">
-					<button type="submit">Enviar</button>
-				</div>
-				<input type="hidden" name="_next" value="http://127.0.0.1:5500/">
-				<input type="hidden" name="_captcha" value="false">
-			</form>
-		</div>
-		
-		
-	</section>
+        <div id="success-message">
+            <img src="img/enviado.gif" alt="GIF de éxito" width="30" height="30">
+            <span>Mensaje enviado correctamente</span>
+        </div>
+    </section>
+
 	<!-- Registration section ends from here -->
 
 
@@ -439,6 +439,8 @@
 		});
 	});
 	</script>
+
+	
 
 
     <script src="script.js"></script>

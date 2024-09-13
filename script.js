@@ -156,3 +156,30 @@ document.querySelectorAll('.image-container').forEach(container => {
         hoverImages[index].style.opacity = '1'; // Vuelve a la imagen inicial
     });
 });
+
+
+// Función para manejar el envío del formulario
+function handleFormSubmit(event) {
+    event.preventDefault(); // Prevenir el envío por defecto
+
+    // Obtener el formulario y el contenedor del mensaje de éxito
+    const form = document.getElementById('myForm');
+    const successMessage = document.getElementById('success-message');
+
+    // Muestra el mensaje de éxito
+    successMessage.style.display = 'flex';
+
+    // Oculta el mensaje de éxito después de 3 segundos y luego envía el formulario
+    setTimeout(function() {
+        successMessage.style.display = 'none';
+        form.submit(); // Envía el formulario
+    }, 3000);
+}
+
+// Añadir el evento al formulario cuando el DOM esté completamente cargado
+document.addEventListener('DOMContentLoaded', function() {
+    const form = document.getElementById('myForm');
+    if (form) {
+        form.addEventListener('submit', handleFormSubmit);
+    }
+});
