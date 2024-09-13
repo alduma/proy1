@@ -95,9 +95,8 @@
 
 		<div class="form">
 			<div class="centrar"><h4>Formulario</h4></div>
-			
-			
-			<form action="https://formsubmit.co/alvaro.durand@ucsp.edu.pe" method="POST">
+		
+			<form id="contactForm" action="https://formsubmit.co/alvaro.durand@ucsp.edu.pe" method="POST">
 				<div class="form-row">
 					<input type="text" name="name" placeholder="Ingresa tu nombre" required>
 					<input type="email" name="email" placeholder="Ingresa tu correo" required>
@@ -111,11 +110,20 @@
 				<div class="form-col">
 					<button type="submit">Enviar mensaje</button>
 				</div>
-
-				<input type="hidden" name="_next" value="http://127.0.0.1:5500/">
+		
+				<input type="hidden" name="_next" value="https://proy1-flame.vercel.app/">
 				<input type="hidden" name="_captcha" value="false">
 			</form>
 		</div>
+		
+		<!-- Mensaje de éxito -->
+		<div id="success-message">
+			<img src="img/enviado.gif" alt="GIF de éxito">
+			<span>Datos enviados correctamente</span>
+		</div>
+		
+		<!-- Overlay -->
+		<div id="overlay"></div>
 		
 	</section>
 
@@ -203,5 +211,35 @@
 			$('nav .navigation ul').removeClass('active')
 		});
 	</script>
+	 <script>
+		function handleFormSubmit(event) {
+    event.preventDefault(); // Prevenir el envío por defecto
+
+    // Obtener el formulario y el contenedor del mensaje de éxito
+    const form = event.target; // El formulario que desencadenó el evento
+    const successMessage = document.getElementById('success-message');
+    const overlay = document.getElementById('overlay');
+
+    // Muestra el mensaje de éxito y el overlay
+    overlay.style.display = 'block';
+    successMessage.style.display = 'flex';
+
+    // Oculta el mensaje de éxito después de 3 segundos y luego envía el formulario
+    setTimeout(function() {
+        successMessage.style.display = 'none';
+        overlay.style.display = 'none';
+        form.submit(); // Envía el formulario
+    }, 1500);
+}
+
+// Añadir el evento a todos los formularios cuando el DOM esté completamente cargado
+document.addEventListener('DOMContentLoaded', function() {
+    const forms = document.querySelectorAll('form');
+    forms.forEach(form => {
+        form.addEventListener('submit', handleFormSubmit);
+    });
+});
+	 </script>
+
 </body>
 </html>

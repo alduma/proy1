@@ -163,23 +163,30 @@ function handleFormSubmit(event) {
     event.preventDefault(); // Prevenir el envío por defecto
 
     // Obtener el formulario y el contenedor del mensaje de éxito
-    const form = document.getElementById('myForm');
+    const form = event.target; // El formulario que desencadenó el evento
     const successMessage = document.getElementById('success-message');
+    const overlay = document.getElementById('overlay');
 
-    // Muestra el mensaje de éxito
+    // Muestra el mensaje de éxito y el overlay
+    overlay.style.display = 'block';
     successMessage.style.display = 'flex';
 
     // Oculta el mensaje de éxito después de 3 segundos y luego envía el formulario
     setTimeout(function() {
         successMessage.style.display = 'none';
+        overlay.style.display = 'none';
         form.submit(); // Envía el formulario
-    }, 3000);
+    }, 1500);
 }
 
-// Añadir el evento al formulario cuando el DOM esté completamente cargado
+// Añadir el evento a todos los formularios cuando el DOM esté completamente cargado
 document.addEventListener('DOMContentLoaded', function() {
-    const form = document.getElementById('myForm');
-    if (form) {
+    const forms = document.querySelectorAll('form');
+    forms.forEach(form => {
         form.addEventListener('submit', handleFormSubmit);
-    }
+    });
 });
+
+
+
+

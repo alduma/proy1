@@ -54,10 +54,19 @@
 				<textarea id="order-details" name="order-details" rows="6" readonly></textarea>
 			
 				<button type="submit">Enviar Pedido</button>
-				<input type="hidden" name="_next" value="http://127.0.0.1:5500/">
+				<input type="hidden" name="_next" value="https://proy1-flame.vercel.app/">
 				<input type="hidden" name="_captcha" value="false">
 			</form>
 		</div>
+
+		<!-- Mensaje de éxito -->
+		<div id="success-message">
+			<img src="img/enviado.gif" alt="GIF de éxito">
+			<span>Pedido enviado correctamente</span>
+		</div>
+		
+		<!-- Overlay -->
+		<div id="overlay"></div>
 		
 		
 		<div class="navigation">
@@ -281,6 +290,36 @@
 		}
 
 	</script>
+
+<script>
+	function handleFormSubmit(event) {
+event.preventDefault(); // Prevenir el envío por defecto
+
+// Obtener el formulario y el contenedor del mensaje de éxito
+const form = event.target; // El formulario que desencadenó el evento
+const successMessage = document.getElementById('success-message');
+const overlay = document.getElementById('overlay');
+
+// Muestra el mensaje de éxito y el overlay
+overlay.style.display = 'block';
+successMessage.style.display = 'flex';
+
+// Oculta el mensaje de éxito después de 3 segundos y luego envía el formulario
+setTimeout(function() {
+	successMessage.style.display = 'none';
+	overlay.style.display = 'none';
+	form.submit(); // Envía el formulario
+}, 1500);
+}
+
+// Añadir el evento a todos los formularios cuando el DOM esté completamente cargado
+document.addEventListener('DOMContentLoaded', function() {
+const forms = document.querySelectorAll('form');
+forms.forEach(form => {
+	form.addEventListener('submit', handleFormSubmit);
+});
+});
+ </script>
 
 	<script src="script.js"></script>
 	<script src="estella.js"></script>

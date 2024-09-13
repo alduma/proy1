@@ -298,3 +298,43 @@
 		width: 100%;
 	}
 }
+
+
+/* Estilo para el overlay */
+#overlay {
+    display: none; /* Inicialmente oculto */
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.7); /* Fondo negro semi-transparente */
+    z-index: 999; /* Debe estar debajo del mensaje */
+}
+
+/* Estilo para el mensaje de éxito */
+#success-message {
+    display: none; /* Inicialmente oculto */
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); /* Centra el mensaje en la pantalla */
+    background: #d4edda; /* Fondo del mensaje */
+    color: #155724; /* Color del texto */
+    padding: 20px; /* Padding para el mensaje */
+    border-radius: 10px; /* Bordes redondeados */
+    z-index: 1000; /* Asegura que esté encima del overlay */
+    text-align: center; /* Centra el texto dentro del mensaje */
+}
+
+#success-message img {
+    vertical-align: middle;
+    margin-right: 10px;
+    width: 50px; /* Tamaño del GIF aumentado */
+    height: 50px; /* Tamaño del GIF aumentado */
+}
+
+#success-message span {
+    font-size: 1.5em; /* Tamaño del texto aumentado */
+    font-weight: bold; /* Texto en negrita */
+}

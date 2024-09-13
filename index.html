@@ -43,21 +43,29 @@
 		<div id="order-form" class="cart-products" style="display:none;">
 			<span class="close-modal" onclick="closeOrderForm()">&times;</span>
 			<h3>Realizar Pedido</h3>
-			<form action="https://formsubmit.co/alvaro.durand@ucsp.edu.pe" method="POST">
+			<form id="orderForm" action="https://formsubmit.co/alvaro.durand@ucsp.edu.pe" method="POST">
 				<label for="name">Nombre:</label>
 				<input type="text" id="name" name="name" required>
-			
+				
 				<label for="phone">Teléfono:</label>
 				<input type="text" id="phone" name="phone" required>
-			
+				
 				<label for="order-details">Detalles del Pedido:</label>
 				<textarea id="order-details" name="order-details" rows="6" readonly></textarea>
-			
+				
 				<button type="submit">Enviar Pedido</button>
-				<input type="hidden" name="_next" value="http://127.0.0.1:5500/">
+				<input type="hidden" name="_next" value="https://proy1-flame.vercel.app/">
 				<input type="hidden" name="_captcha" value="false">
 			</form>
 		</div>
+		<div id="overlay"></div>
+
+		<!-- Mensaje de éxito -->
+		<div id="success-message">
+			<img src="img/enviado.gif" alt="GIF de éxito">
+			<span>Pedido enviado correctamente</span>
+		</div>
+		
 		
 		
 		
@@ -316,41 +324,42 @@
 	</div>
 </section>
 
-	<!-- Registration section starts from here -->
-	<section id="registration">
-        <div class="reminder">
-            <div class="centrar1">
-                <h1>Subscríbete para estar al día en los nuevos productos que tenemos</h1>
-                <div><img src="./img/registro.gif" alt="" class="small-image"></div>
-            </div>
-        </div>
+<!-- Registration section starts from here -->
+<section id="registration">
+	<div class="reminder">
+		<div class="centrar1">
+			<h1>Subscríbete para estar al día en los nuevos productos que tenemos</h1>
+			<div><img src="./img/registro.gif" alt="" class="small-image"></div>
+		</div>
+	</div>
 
-        <div class="form1">
-            <form id="myForm" action="https://formsubmit.co/alvaro.durand@ucsp.edu.pe" method="POST">
-                <div class="centrar1">
-                    <div class="form-col">
-                        <input type="text" name="name" placeholder="Ingresa tu nombre" required>
-                    </div>
-                    <div class="form-col">
-                        <input type="text" name="email" placeholder="Ingresa tu correo" required>
-                    </div>
-                    <div class="form-col">
-                        <input type="text" name="phone" placeholder="Ingresa tu número de teléfono" required>
-                    </div>
-                </div>
-                <div class="centrar1">
-                    <button type="submit">Enviar</button>
-                </div>
-                <input type="hidden" name="_next" value="http://127.0.0.1:5500/">
-                <input type="hidden" name="_captcha" value="false">
-            </form>
-        </div>
+	<div class="form1">
+		<form id="myForm" action="https://formsubmit.co/alvaro.durand@ucsp.edu.pe" method="POST">
+			<div class="centrar1">
+				<div class="form-col">
+					<input type="text" name="name" placeholder="Ingresa tu nombre" required>
+				</div>
+				<div class="form-col">
+					<input type="text" name="email" placeholder="Ingresa tu correo" required>
+				</div>
+				<div class="form-col">
+					<input type="text" name="phone" placeholder="Ingresa tu número de teléfono" required>
+				</div>
+			</div>
+			<div class="centrar1">
+				<button type="submit">Enviar</button>
+			</div>
+			<input type="hidden" name="_next" value="https://proy1-flame.vercel.app/">
+			<input type="hidden" name="_captcha" value="false">
+		</form>
+	</div>
+    <div id="overlay"></div>
 
-        <div id="success-message">
-            <img src="img/enviado.gif" alt="GIF de éxito" width="30" height="30">
-            <span>Mensaje enviado correctamente</span>
-        </div>
-    </section>
+	<div id="success-message">
+		<img src="img/enviado.gif" alt="GIF de éxito" width="30" height="30">
+		<span>Mensaje enviado correctamente</span>
+	</div>
+</section>
 
 	<!-- Registration section ends from here -->
 
