@@ -1108,7 +1108,7 @@ footer .copyright .pro-links i:hover
 /*---------------------------------------------------------*/
 /*-------------------- Estilos carrito ----------------*/
 .cart {
-    width: 40px;
+    width: 50px;
     height: 35px;
     position: relative;
     top: 5px; /* Ajusta la posición vertical si es necesario */
@@ -1318,7 +1318,7 @@ footer .copyright .pro-links i:hover
 
 .image-container {
     position: relative;
-    height: 200px; /* Establece la altura fija que desees para el contenedor */
+    height: 290px; /* Establece la altura fija que desees para el contenedor */
     overflow: hidden;
 }
 
